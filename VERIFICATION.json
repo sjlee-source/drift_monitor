@@ -1,0 +1,18 @@
+{
+  "analytical_evidence_hashes_unchanged_after_rerun": true,
+  "periodic_enumeration_cases": 72,
+  "periodic_enumeration_max_error": 1.27675647831893e-15,
+  "main_simulation_checks": {
+    "status": "passed",
+    "max_abs_error": 4.263256414560601e-13,
+    "checks": [
+      "48 scalar-vector recurrences",
+      "all 136 E2 clocks",
+      "periodic boundary includes arrival at check",
+      "empty interval never alarms",
+      "final H check",
+      "CUSUM p1=.12 and .20"
+    ]
+  },
+  "full_simulation_rerun": false
+}

@@ -1,0 +1,7 @@
+{
+  "dataset_sha256": "0284b0e68e702dd058540bbac2efa41f476574e6dec05e4b0d7d7c7ebd5248e8",
+  "checkpoint_sha256": "b332b5da70455323f5c2c1cd6212a0eb953233943d91e1cbf34ed2aaf6dafa6c",
+  "architecture": "ResNet-50 with six-class output",
+  "training_evaluation_independence": "unverified",
+  "training_lineage": "unverified"
+}

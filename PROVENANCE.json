@@ -1,0 +1,15 @@
+{
+  "prepared": "2026-09-28",
+  "scope": "Main simulation source, deterministic analyses and selected numerical evidence",
+  "python": "3.12.3",
+  "source_hashes": {
+    "analysis/build_result_figures.py": "b065ae461f1a916d1d3df42e75595cd69b4f83f87e02a7af1b603414fffb3e46",
+    "analysis/planning_extensions.py": "99a55f633d902ea77cee8bf8b9f6a894f33583a60a71bde7d86b38f98158543e",
+    "analysis/information_planning.py": "850eb1c2ff74b3513820ed238c902b5a5a8671eec82762d1e7c5a36757d7d98c",
+    "analysis/plot_representative_stream.py": "9897581b4e26a3b4f4c307d99b24a227d6bd2cd020716e2c0bf791529ecb8742",
+    "simulation/run.py": "01b0d5e3e164be070ea7dee969569fc92e967ea2d68de7d62e88563ee2468ae7",
+    "simulation/analyze.py": "34e67b5ceb803defe4a79cf2ca3aeb46be9c903d95bd50fbf9190f0f5261d95f"
+  },
+  "paper_status": "manuscript; no assigned publication DOI",
+  "external_assets_bundled": false
+}

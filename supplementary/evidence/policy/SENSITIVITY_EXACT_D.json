@@ -1,0 +1,101 @@
+{
+  "description": "Post-freeze descriptive endpoint sensitivity only. Original primary tau<=alarm<=tau+10000 unchanged. Here tau<=alarm<tau+10000 gives exactly 10000 production positions; not a new primary.",
+  "results": [
+    {
+      "condition": 2,
+      "rates": [
+        0.0675,
+        0.0685,
+        0.003,
+        0.0865,
+        0.0695,
+        0.085
+      ],
+      "excluded_boundary_alarms": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "primary_pair_difference": 0.0165,
+      "paired_bootstrap95": [
+        0.007,
+        0.0265
+      ]
+    },
+    {
+      "condition": 5,
+      "rates": [
+        0.0685,
+        0.0725,
+        0.0035,
+        0.0795,
+        0.0865,
+        0.071
+      ],
+      "excluded_boundary_alarms": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "primary_pair_difference": -0.0015,
+      "paired_bootstrap95": [
+        -0.0105,
+        0.0075
+      ]
+    },
+    {
+      "condition": 8,
+      "rates": [
+        0.728,
+        0.728,
+        0.068,
+        0.775,
+        0.706,
+        0.7605
+      ],
+      "excluded_boundary_alarms": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "primary_pair_difference": 0.0325,
+      "paired_bootstrap95": [
+        0.019,
+        0.046
+      ]
+    },
+    {
+      "condition": 11,
+      "rates": [
+        0.6925,
+        0.696,
+        0.0705,
+        0.7275,
+        0.709,
+        0.721
+      ],
+      "excluded_boundary_alarms": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "primary_pair_difference": 0.025,
+      "paired_bootstrap95": [
+        0.011,
+        0.0385
+      ]
+    }
+  ]
+}

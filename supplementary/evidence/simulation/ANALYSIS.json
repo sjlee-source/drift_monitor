@@ -1,0 +1,54 @@
+{
+  "status": "complete",
+  "validation_max_upper": 0.04095645133584165,
+  "validation_family": 340,
+  "operating_ci_family": 1020,
+  "conditions": 136,
+  "final_replicates_per_condition": 2000,
+  "final_streams": 272000,
+  "detector_evaluations": 1360000,
+  "method_summary_D10000": {
+    "WH_finiteH": {
+      "conditions": 68,
+      "meets80": 8,
+      "mean_condition_detection": 0.22554411764705884
+    },
+    "CUSUM_p1_012": {
+      "conditions": 68,
+      "meets80": 8,
+      "mean_condition_detection": 0.21041176470588238
+    },
+    "CUSUM_p1_020": {
+      "conditions": 68,
+      "meets80": 9,
+      "mean_condition_detection": 0.2561764705882353
+    },
+    "mSR_finiteH": {
+      "conditions": 68,
+      "meets80": 8,
+      "mean_condition_detection": 0.2521470588235294
+    },
+    "periodic_binomial": {
+      "conditions": 68,
+      "meets80": 8,
+      "mean_condition_detection": 0.17219852941176472
+    }
+  },
+  "descriptive_CUSUM20_comparisons_D10000": {
+    "WH_finiteH": {
+      "CUSUM20_point_higher": 59,
+      "equal": 4,
+      "lower": 5
+    },
+    "CUSUM_p1_012": {
+      "CUSUM20_point_higher": 56,
+      "equal": 4,
+      "lower": 8
+    },
+    "mSR_finiteH": {
+      "CUSUM20_point_higher": 26,
+      "equal": 6,
+      "lower": 36
+    }
+  }
+}

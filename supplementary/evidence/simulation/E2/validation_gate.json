@@ -1,0 +1,3069 @@
+{
+  "family_size": 340,
+  "confidence": 0.95,
+  "gate_rule": "all operational methods x all planned null cells upper<=.05",
+  "passed": true,
+  "native_is_reference_not_gate": false,
+  "results": [
+    {
+      "condition": "E2_002",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 4,
+      "rate": 0.0013333333333333333,
+      "simultaneous_upper": 0.005751082451864042,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_002",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 8,
+      "rate": 0.0026666666666666666,
+      "simultaneous_upper": 0.00799007754619212,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_002",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 8,
+      "rate": 0.0026666666666666666,
+      "simultaneous_upper": 0.00799007754619212,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_002",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 9,
+      "rate": 0.003,
+      "simultaneous_upper": 0.00851557421047705,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_002",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 2,
+      "rate": 0.0006666666666666666,
+      "simultaneous_upper": 0.004485448253805507,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_003",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 50,
+      "rate": 0.016666666666666666,
+      "simultaneous_upper": 0.02684851333626767,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_003",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 56,
+      "rate": 0.018666666666666668,
+      "simultaneous_upper": 0.02932010367126112,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_003",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 59,
+      "rate": 0.019666666666666666,
+      "simultaneous_upper": 0.030545951903111098,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_003",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 51,
+      "rate": 0.017,
+      "simultaneous_upper": 0.0272624219049205,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_003",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 11,
+      "rate": 0.0036666666666666666,
+      "simultaneous_upper": 0.009539421461600478,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_006",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 2,
+      "rate": 0.0006666666666666666,
+      "simultaneous_upper": 0.004485448253805507,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_006",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_006",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 1,
+      "rate": 0.0003333333333333333,
+      "simultaneous_upper": 0.003772597854886513,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_006",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 1,
+      "rate": 0.0003333333333333333,
+      "simultaneous_upper": 0.003772597854886513,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_006",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_007",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 53,
+      "rate": 0.017666666666666667,
+      "simultaneous_upper": 0.028087801988890868,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_007",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 55,
+      "rate": 0.018333333333333333,
+      "simultaneous_upper": 0.02891007837401743,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_007",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 61,
+      "rate": 0.02033333333333333,
+      "simultaneous_upper": 0.031359832248608756,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_007",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 66,
+      "rate": 0.022,
+      "simultaneous_upper": 0.03338369476960248,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_007",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 12,
+      "rate": 0.004,
+      "simultaneous_upper": 0.010040034137309787,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_010",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 6,
+      "rate": 0.002,
+      "simultaneous_upper": 0.006903655379084839,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_010",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 2,
+      "rate": 0.0006666666666666666,
+      "simultaneous_upper": 0.004485448253805507,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_010",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 2,
+      "rate": 0.0006666666666666666,
+      "simultaneous_upper": 0.004485448253805507,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_010",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 1,
+      "rate": 0.0003333333333333333,
+      "simultaneous_upper": 0.003772597854886513,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_010",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 1,
+      "rate": 0.0003333333333333333,
+      "simultaneous_upper": 0.003772597854886513,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_011",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 43,
+      "rate": 0.014333333333333333,
+      "simultaneous_upper": 0.023926042095917487,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_011",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 46,
+      "rate": 0.015333333333333332,
+      "simultaneous_upper": 0.02518418719921006,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_011",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 41,
+      "rate": 0.013666666666666667,
+      "simultaneous_upper": 0.023082090790131633,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_011",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 50,
+      "rate": 0.016666666666666666,
+      "simultaneous_upper": 0.02684851333626767,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_011",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 10,
+      "rate": 0.0033333333333333335,
+      "simultaneous_upper": 0.009031602108663416,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_014",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 2,
+      "rate": 0.0006666666666666666,
+      "simultaneous_upper": 0.004485448253805507,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_014",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 1,
+      "rate": 0.0003333333333333333,
+      "simultaneous_upper": 0.003772597854886513,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_014",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 1,
+      "rate": 0.0003333333333333333,
+      "simultaneous_upper": 0.003772597854886513,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_014",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 2,
+      "rate": 0.0006666666666666666,
+      "simultaneous_upper": 0.004485448253805507,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_014",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 2,
+      "rate": 0.0006666666666666666,
+      "simultaneous_upper": 0.004485448253805507,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_015",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 58,
+      "rate": 0.019333333333333334,
+      "simultaneous_upper": 0.030138022769949164,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_015",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 62,
+      "rate": 0.020666666666666667,
+      "simultaneous_upper": 0.03176581462932756,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_015",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 59,
+      "rate": 0.019666666666666666,
+      "simultaneous_upper": 0.030545951903111098,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_015",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 53,
+      "rate": 0.017666666666666667,
+      "simultaneous_upper": 0.028087801988890868,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_015",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 18,
+      "rate": 0.006,
+      "simultaneous_upper": 0.012929470234870566,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_018",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 6,
+      "rate": 0.002,
+      "simultaneous_upper": 0.006903655379084839,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_018",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_018",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_018",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_018",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 1,
+      "rate": 0.0003333333333333333,
+      "simultaneous_upper": 0.003772597854886513,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_019",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 45,
+      "rate": 0.015,
+      "simultaneous_upper": 0.024765798155026008,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_019",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 48,
+      "rate": 0.016,
+      "simultaneous_upper": 0.026018140409162182,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_019",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 37,
+      "rate": 0.012333333333333333,
+      "simultaneous_upper": 0.02138037342085917,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_019",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 55,
+      "rate": 0.018333333333333333,
+      "simultaneous_upper": 0.02891007837401743,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_019",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 14,
+      "rate": 0.004666666666666667,
+      "simultaneous_upper": 0.011022745668220266,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_022",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 4,
+      "rate": 0.0013333333333333333,
+      "simultaneous_upper": 0.005751082451864042,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_022",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_022",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_022",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 1,
+      "rate": 0.0003333333333333333,
+      "simultaneous_upper": 0.003772597854886513,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_022",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 1,
+      "rate": 0.0003333333333333333,
+      "simultaneous_upper": 0.003772597854886513,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_023",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 52,
+      "rate": 0.017333333333333333,
+      "simultaneous_upper": 0.02767551058124507,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_023",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 59,
+      "rate": 0.019666666666666666,
+      "simultaneous_upper": 0.030545951903111098,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_023",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 64,
+      "rate": 0.021333333333333333,
+      "simultaneous_upper": 0.03257593717375406,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_023",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 65,
+      "rate": 0.021666666666666667,
+      "simultaneous_upper": 0.03298010499969684,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_023",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 24,
+      "rate": 0.008,
+      "simultaneous_upper": 0.015683972892544067,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_026",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 2,
+      "rate": 0.0006666666666666666,
+      "simultaneous_upper": 0.004485448253805507,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_026",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_026",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_026",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 2,
+      "rate": 0.0006666666666666666,
+      "simultaneous_upper": 0.004485448253805507,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_026",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 2,
+      "rate": 0.0006666666666666666,
+      "simultaneous_upper": 0.004485448253805507,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_027",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 51,
+      "rate": 0.017,
+      "simultaneous_upper": 0.0272624219049205,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_027",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 46,
+      "rate": 0.015333333333333332,
+      "simultaneous_upper": 0.02518418719921006,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_027",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 51,
+      "rate": 0.017,
+      "simultaneous_upper": 0.0272624219049205,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_027",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 55,
+      "rate": 0.018333333333333333,
+      "simultaneous_upper": 0.02891007837401743,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_027",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 19,
+      "rate": 0.006333333333333333,
+      "simultaneous_upper": 0.01339624839710028,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_030",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 2,
+      "rate": 0.0006666666666666666,
+      "simultaneous_upper": 0.004485448253805507,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_030",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_030",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_030",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_030",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 1,
+      "rate": 0.0003333333333333333,
+      "simultaneous_upper": 0.003772597854886513,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_031",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 58,
+      "rate": 0.019333333333333334,
+      "simultaneous_upper": 0.030138022769949164,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_031",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 61,
+      "rate": 0.02033333333333333,
+      "simultaneous_upper": 0.031359832248608756,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_031",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 52,
+      "rate": 0.017333333333333333,
+      "simultaneous_upper": 0.02767551058124507,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_031",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 65,
+      "rate": 0.021666666666666667,
+      "simultaneous_upper": 0.03298010499969684,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_031",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 24,
+      "rate": 0.008,
+      "simultaneous_upper": 0.015683972892544067,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_034",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 3,
+      "rate": 0.001,
+      "simultaneous_upper": 0.00513744812316245,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_034",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_034",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_034",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_034",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_035",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 70,
+      "rate": 0.023333333333333334,
+      "simultaneous_upper": 0.03499251799290188,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_035",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 55,
+      "rate": 0.018333333333333333,
+      "simultaneous_upper": 0.02891007837401743,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_035",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 58,
+      "rate": 0.019333333333333334,
+      "simultaneous_upper": 0.030138022769949164,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_035",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 64,
+      "rate": 0.021333333333333333,
+      "simultaneous_upper": 0.03257593717375406,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_035",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 23,
+      "rate": 0.007666666666666666,
+      "simultaneous_upper": 0.015231919483253066,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_038",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 1,
+      "rate": 0.0003333333333333333,
+      "simultaneous_upper": 0.003772597854886513,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_038",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_038",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_038",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 1,
+      "rate": 0.0003333333333333333,
+      "simultaneous_upper": 0.003772597854886513,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_038",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_039",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 67,
+      "rate": 0.022333333333333334,
+      "simultaneous_upper": 0.03378671905508534,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_039",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 70,
+      "rate": 0.023333333333333334,
+      "simultaneous_upper": 0.03499251799290188,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_039",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 67,
+      "rate": 0.022333333333333334,
+      "simultaneous_upper": 0.03378671905508534,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_039",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 68,
+      "rate": 0.02266666666666667,
+      "simultaneous_upper": 0.03418918997008897,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_039",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 33,
+      "rate": 0.011,
+      "simultaneous_upper": 0.01965776895253912,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_042",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_042",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_042",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_042",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_042",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_043",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 61,
+      "rate": 0.02033333333333333,
+      "simultaneous_upper": 0.031359832248608756,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_043",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 65,
+      "rate": 0.021666666666666667,
+      "simultaneous_upper": 0.03298010499969684,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_043",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 60,
+      "rate": 0.02,
+      "simultaneous_upper": 0.030953216428788656,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_043",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 52,
+      "rate": 0.017333333333333333,
+      "simultaneous_upper": 0.02767551058124507,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_043",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 19,
+      "rate": 0.006333333333333333,
+      "simultaneous_upper": 0.01339624839710028,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_046",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 2,
+      "rate": 0.0006666666666666666,
+      "simultaneous_upper": 0.004485448253805507,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_046",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_046",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_046",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_046",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_047",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 57,
+      "rate": 0.019,
+      "simultaneous_upper": 0.029729412455118415,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_047",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 68,
+      "rate": 0.02266666666666667,
+      "simultaneous_upper": 0.03418918997008897,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_047",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 65,
+      "rate": 0.021666666666666667,
+      "simultaneous_upper": 0.03298010499969684,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_047",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 57,
+      "rate": 0.019,
+      "simultaneous_upper": 0.029729412455118415,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_047",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 25,
+      "rate": 0.008333333333333333,
+      "simultaneous_upper": 0.016133608709162486,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_050",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 1,
+      "rate": 0.0003333333333333333,
+      "simultaneous_upper": 0.003772597854886513,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_050",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_050",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_050",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 1,
+      "rate": 0.0003333333333333333,
+      "simultaneous_upper": 0.003772597854886513,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_050",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_051",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 70,
+      "rate": 0.023333333333333334,
+      "simultaneous_upper": 0.03499251799290188,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_051",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 76,
+      "rate": 0.025333333333333333,
+      "simultaneous_upper": 0.03739035557391718,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_051",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 62,
+      "rate": 0.020666666666666667,
+      "simultaneous_upper": 0.03176581462932756,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_051",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 64,
+      "rate": 0.021333333333333333,
+      "simultaneous_upper": 0.03257593717375406,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_051",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 26,
+      "rate": 0.008666666666666666,
+      "simultaneous_upper": 0.01658096347080483,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_054",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 1,
+      "rate": 0.0003333333333333333,
+      "simultaneous_upper": 0.003772597854886513,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_054",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_054",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_054",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_054",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_055",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 38,
+      "rate": 0.012666666666666666,
+      "simultaneous_upper": 0.02180763606821082,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_055",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 37,
+      "rate": 0.012333333333333333,
+      "simultaneous_upper": 0.02138037342085917,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_055",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 45,
+      "rate": 0.015,
+      "simultaneous_upper": 0.024765798155026008,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_055",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 59,
+      "rate": 0.019666666666666666,
+      "simultaneous_upper": 0.030545951903111098,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_055",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 32,
+      "rate": 0.010666666666666666,
+      "simultaneous_upper": 0.019223439161788838,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_058",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 3,
+      "rate": 0.001,
+      "simultaneous_upper": 0.00513744812316245,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_058",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_058",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_058",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_058",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_059",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 66,
+      "rate": 0.022,
+      "simultaneous_upper": 0.03338369476960248,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_059",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 66,
+      "rate": 0.022,
+      "simultaneous_upper": 0.03338369476960248,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_059",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 67,
+      "rate": 0.022333333333333334,
+      "simultaneous_upper": 0.03378671905508534,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_059",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 57,
+      "rate": 0.019,
+      "simultaneous_upper": 0.029729412455118415,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_059",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 20,
+      "rate": 0.006666666666666667,
+      "simultaneous_upper": 0.013859659844278423,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_062",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_062",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_062",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_062",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 2,
+      "rate": 0.0006666666666666666,
+      "simultaneous_upper": 0.004485448253805507,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_062",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_063",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 64,
+      "rate": 0.021333333333333333,
+      "simultaneous_upper": 0.03257593717375406,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_063",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 55,
+      "rate": 0.018333333333333333,
+      "simultaneous_upper": 0.02891007837401743,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_063",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 61,
+      "rate": 0.02033333333333333,
+      "simultaneous_upper": 0.031359832248608756,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_063",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 68,
+      "rate": 0.02266666666666667,
+      "simultaneous_upper": 0.03418918997008897,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_063",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 32,
+      "rate": 0.010666666666666666,
+      "simultaneous_upper": 0.019223439161788838,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_066",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 1,
+      "rate": 0.0003333333333333333,
+      "simultaneous_upper": 0.003772597854886513,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_066",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_066",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_066",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_066",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_067",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 62,
+      "rate": 0.020666666666666667,
+      "simultaneous_upper": 0.03176581462932756,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_067",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 43,
+      "rate": 0.014333333333333333,
+      "simultaneous_upper": 0.023926042095917487,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_067",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 64,
+      "rate": 0.021333333333333333,
+      "simultaneous_upper": 0.03257593717375406,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_067",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 47,
+      "rate": 0.015666666666666666,
+      "simultaneous_upper": 0.025601624944950333,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_067",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 39,
+      "rate": 0.013,
+      "simultaneous_upper": 0.022233646366581337,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_070",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_070",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_070",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_070",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_070",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 2,
+      "rate": 0.0006666666666666666,
+      "simultaneous_upper": 0.004485448253805507,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_071",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 48,
+      "rate": 0.016,
+      "simultaneous_upper": 0.026018140409162182,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_071",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 67,
+      "rate": 0.022333333333333334,
+      "simultaneous_upper": 0.03378671905508534,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_071",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 60,
+      "rate": 0.02,
+      "simultaneous_upper": 0.030953216428788656,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_071",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 57,
+      "rate": 0.019,
+      "simultaneous_upper": 0.029729412455118415,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_071",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 32,
+      "rate": 0.010666666666666666,
+      "simultaneous_upper": 0.019223439161788838,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_074",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 1,
+      "rate": 0.0003333333333333333,
+      "simultaneous_upper": 0.003772597854886513,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_074",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_074",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_074",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_074",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_075",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 72,
+      "rate": 0.024,
+      "simultaneous_upper": 0.03579376743612379,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_075",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 65,
+      "rate": 0.021666666666666667,
+      "simultaneous_upper": 0.03298010499969684,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_075",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 68,
+      "rate": 0.02266666666666667,
+      "simultaneous_upper": 0.03418918997008897,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_075",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 67,
+      "rate": 0.022333333333333334,
+      "simultaneous_upper": 0.03378671905508534,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_075",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 40,
+      "rate": 0.013333333333333334,
+      "simultaneous_upper": 0.02265845022671001,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_078",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_078",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_078",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_078",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_078",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_079",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 59,
+      "rate": 0.019666666666666666,
+      "simultaneous_upper": 0.030545951903111098,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_079",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 51,
+      "rate": 0.017,
+      "simultaneous_upper": 0.0272624219049205,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_079",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 62,
+      "rate": 0.020666666666666667,
+      "simultaneous_upper": 0.03176581462932756,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_079",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 59,
+      "rate": 0.019666666666666666,
+      "simultaneous_upper": 0.030545951903111098,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_079",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 30,
+      "rate": 0.01,
+      "simultaneous_upper": 0.01834989660094991,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_082",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_082",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_082",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_082",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_082",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_083",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 56,
+      "rate": 0.018666666666666668,
+      "simultaneous_upper": 0.02932010367126112,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_083",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 63,
+      "rate": 0.021,
+      "simultaneous_upper": 0.03217117823784183,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_083",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 54,
+      "rate": 0.018,
+      "simultaneous_upper": 0.028499317714667575,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_083",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 57,
+      "rate": 0.019,
+      "simultaneous_upper": 0.029729412455118415,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_083",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 28,
+      "rate": 0.009333333333333334,
+      "simultaneous_upper": 0.01746931510495013,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_086",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_086",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_086",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_086",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_086",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_087",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 61,
+      "rate": 0.02033333333333333,
+      "simultaneous_upper": 0.031359832248608756,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_087",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 56,
+      "rate": 0.018666666666666668,
+      "simultaneous_upper": 0.02932010367126112,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_087",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 72,
+      "rate": 0.024,
+      "simultaneous_upper": 0.03579376743612379,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_087",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 64,
+      "rate": 0.021333333333333333,
+      "simultaneous_upper": 0.03257593717375406,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_087",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 26,
+      "rate": 0.008666666666666666,
+      "simultaneous_upper": 0.01658096347080483,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_090",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_090",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_090",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_090",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_090",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_091",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 59,
+      "rate": 0.019666666666666666,
+      "simultaneous_upper": 0.030545951903111098,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_091",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 49,
+      "rate": 0.01633333333333333,
+      "simultaneous_upper": 0.026433761143532835,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_091",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 53,
+      "rate": 0.017666666666666667,
+      "simultaneous_upper": 0.028087801988890868,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_091",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 56,
+      "rate": 0.018666666666666668,
+      "simultaneous_upper": 0.02932010367126112,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_091",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 34,
+      "rate": 0.011333333333333334,
+      "simultaneous_upper": 0.02009056513938692,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_094",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 1,
+      "rate": 0.0003333333333333333,
+      "simultaneous_upper": 0.003772597854886513,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_094",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_094",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_094",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_094",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_095",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 52,
+      "rate": 0.017333333333333333,
+      "simultaneous_upper": 0.02767551058124507,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_095",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 66,
+      "rate": 0.022,
+      "simultaneous_upper": 0.03338369476960248,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_095",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 58,
+      "rate": 0.019333333333333334,
+      "simultaneous_upper": 0.030138022769949164,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_095",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 55,
+      "rate": 0.018333333333333333,
+      "simultaneous_upper": 0.02891007837401743,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_095",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 29,
+      "rate": 0.009666666666666667,
+      "simultaneous_upper": 0.01791052857403557,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_098",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_098",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_098",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_098",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_098",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_099",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 64,
+      "rate": 0.021333333333333333,
+      "simultaneous_upper": 0.03257593717375406,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_099",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 71,
+      "rate": 0.023666666666666666,
+      "simultaneous_upper": 0.03539339724043728,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_099",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 56,
+      "rate": 0.018666666666666668,
+      "simultaneous_upper": 0.02932010367126112,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_099",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 55,
+      "rate": 0.018333333333333333,
+      "simultaneous_upper": 0.02891007837401743,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_099",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 37,
+      "rate": 0.012333333333333333,
+      "simultaneous_upper": 0.02138037342085917,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_102",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_102",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_102",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_102",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_102",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_103",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 70,
+      "rate": 0.023333333333333334,
+      "simultaneous_upper": 0.03499251799290188,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_103",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 56,
+      "rate": 0.018666666666666668,
+      "simultaneous_upper": 0.02932010367126112,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_103",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 57,
+      "rate": 0.019,
+      "simultaneous_upper": 0.029729412455118415,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_103",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 51,
+      "rate": 0.017,
+      "simultaneous_upper": 0.0272624219049205,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_103",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 41,
+      "rate": 0.013666666666666667,
+      "simultaneous_upper": 0.023082090790131633,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_106",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_106",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_106",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_106",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_106",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_107",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 58,
+      "rate": 0.019333333333333334,
+      "simultaneous_upper": 0.030138022769949164,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_107",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 46,
+      "rate": 0.015333333333333332,
+      "simultaneous_upper": 0.02518418719921006,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_107",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 55,
+      "rate": 0.018333333333333333,
+      "simultaneous_upper": 0.02891007837401743,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_107",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 59,
+      "rate": 0.019666666666666666,
+      "simultaneous_upper": 0.030545951903111098,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_107",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 39,
+      "rate": 0.013,
+      "simultaneous_upper": 0.022233646366581337,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_110",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 1,
+      "rate": 0.0003333333333333333,
+      "simultaneous_upper": 0.003772597854886513,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_110",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_110",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_110",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_110",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_111",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 79,
+      "rate": 0.026333333333333334,
+      "simultaneous_upper": 0.038582916557853744,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_111",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 76,
+      "rate": 0.025333333333333333,
+      "simultaneous_upper": 0.03739035557391718,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_111",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 60,
+      "rate": 0.02,
+      "simultaneous_upper": 0.030953216428788656,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_111",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 61,
+      "rate": 0.02033333333333333,
+      "simultaneous_upper": 0.031359832248608756,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_111",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 56,
+      "rate": 0.018666666666666668,
+      "simultaneous_upper": 0.02932010367126112,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_114",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_114",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_114",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_114",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_114",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_115",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 60,
+      "rate": 0.02,
+      "simultaneous_upper": 0.030953216428788656,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_115",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 68,
+      "rate": 0.02266666666666667,
+      "simultaneous_upper": 0.03418918997008897,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_115",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 65,
+      "rate": 0.021666666666666667,
+      "simultaneous_upper": 0.03298010499969684,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_115",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 62,
+      "rate": 0.020666666666666667,
+      "simultaneous_upper": 0.03176581462932756,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_115",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 45,
+      "rate": 0.015,
+      "simultaneous_upper": 0.024765798155026008,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_118",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_118",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_118",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_118",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_118",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_119",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 50,
+      "rate": 0.016666666666666666,
+      "simultaneous_upper": 0.02684851333626767,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_119",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 67,
+      "rate": 0.022333333333333334,
+      "simultaneous_upper": 0.03378671905508534,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_119",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 43,
+      "rate": 0.014333333333333333,
+      "simultaneous_upper": 0.023926042095917487,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_119",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 54,
+      "rate": 0.018,
+      "simultaneous_upper": 0.028499317714667575,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_119",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 47,
+      "rate": 0.015666666666666666,
+      "simultaneous_upper": 0.025601624944950333,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_122",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_122",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_122",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_122",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_122",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_123",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 82,
+      "rate": 0.027333333333333334,
+      "simultaneous_upper": 0.039771546787372956,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_123",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 57,
+      "rate": 0.019,
+      "simultaneous_upper": 0.029729412455118415,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_123",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 65,
+      "rate": 0.021666666666666667,
+      "simultaneous_upper": 0.03298010499969684,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_123",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 57,
+      "rate": 0.019,
+      "simultaneous_upper": 0.029729412455118415,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_123",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 42,
+      "rate": 0.014,
+      "simultaneous_upper": 0.0235046086579619,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_126",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_126",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_126",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_126",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_126",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_127",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 58,
+      "rate": 0.019333333333333334,
+      "simultaneous_upper": 0.030138022769949164,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_127",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 85,
+      "rate": 0.028333333333333332,
+      "simultaneous_upper": 0.04095645133584165,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_127",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 66,
+      "rate": 0.022,
+      "simultaneous_upper": 0.03338369476960248,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_127",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 73,
+      "rate": 0.024333333333333332,
+      "simultaneous_upper": 0.03619363872347558,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_127",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 38,
+      "rate": 0.012666666666666666,
+      "simultaneous_upper": 0.02180763606821082,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_130",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 3,
+      "rate": 0.001,
+      "simultaneous_upper": 0.00513744812316245,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_130",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_130",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_130",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_130",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 1,
+      "rate": 0.0003333333333333333,
+      "simultaneous_upper": 0.003772597854886513,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_131",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 62,
+      "rate": 0.020666666666666667,
+      "simultaneous_upper": 0.03176581462932756,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_131",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 58,
+      "rate": 0.019333333333333334,
+      "simultaneous_upper": 0.030138022769949164,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_131",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 59,
+      "rate": 0.019666666666666666,
+      "simultaneous_upper": 0.030545951903111098,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_131",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 54,
+      "rate": 0.018,
+      "simultaneous_upper": 0.028499317714667575,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_131",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 22,
+      "rate": 0.007333333333333333,
+      "simultaneous_upper": 0.014777297622410477,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_134",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_134",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_134",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_134",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 0,
+      "rate": 0.0,
+      "simultaneous_upper": 0.0029372371504945167,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_134",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 1,
+      "rate": 0.0003333333333333333,
+      "simultaneous_upper": 0.003772597854886513,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_135",
+      "method": "WH_finiteH",
+      "n": 3000,
+      "alarms": 60,
+      "rate": 0.02,
+      "simultaneous_upper": 0.030953216428788656,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_135",
+      "method": "CUSUM_p1_012",
+      "n": 3000,
+      "alarms": 52,
+      "rate": 0.017333333333333333,
+      "simultaneous_upper": 0.02767551058124507,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_135",
+      "method": "CUSUM_p1_020",
+      "n": 3000,
+      "alarms": 62,
+      "rate": 0.020666666666666667,
+      "simultaneous_upper": 0.03176581462932756,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_135",
+      "method": "mSR_finiteH",
+      "n": 3000,
+      "alarms": 55,
+      "rate": 0.018333333333333333,
+      "simultaneous_upper": 0.02891007837401743,
+      "pass_gate": true
+    },
+    {
+      "condition": "E2_135",
+      "method": "periodic_binomial",
+      "n": 3000,
+      "alarms": 21,
+      "rate": 0.007,
+      "simultaneous_upper": 0.014319939929163207,
+      "pass_gate": true
+    }
+  ]
+}

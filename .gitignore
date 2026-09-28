@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.venv/
+figures/*
+!figures/.gitkeep
+simulation/E1/
+simulation/E2/
+simulation/pilot*/
+simulation/*.npz
+simulation/*.log
+simulation/*.lock
+simulation/status.*
+simulation/execution_config.json
+simulation/numerical_validation.json
+simulation/operating_map.csv
+simulation/*summary*.csv
+simulation/ANALYSIS.json

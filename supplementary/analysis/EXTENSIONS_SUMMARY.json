@@ -1,0 +1,82 @@
+{
+  "periodic_cells": 204,
+  "enumeration_cases": 72,
+  "enumeration_max_error": 1.27675647831893e-15,
+  "analytic_supported": 20,
+  "bound_above_empirical_upper": 0,
+  "primary_counts": {
+    "global_bonferroni": {
+      "supported": 41,
+      "insufficient": 291,
+      "inconclusive": 8
+    },
+    "global_holm": {
+      "supported": 41,
+      "insufficient": 293,
+      "inconclusive": 6
+    },
+    "deadline_family_bonferroni": {
+      "supported": 41,
+      "insufficient": 292,
+      "inconclusive": 7
+    }
+  },
+  "example": [
+    {
+      "condition": "E2_097",
+      "method": "WH_finiteH",
+      "deadline": "10000",
+      "rate": "0.995",
+      "global_bonferroni": "supported",
+      "global_holm": "supported",
+      "deadline_family_bonferroni": "supported",
+      "deadline_family_lower": 0.9859501036705722,
+      "deadline_family_upper": 0.9989404301205859
+    },
+    {
+      "condition": "E2_097",
+      "method": "CUSUM_p1_012",
+      "deadline": "10000",
+      "rate": "0.999",
+      "global_bonferroni": "supported",
+      "global_holm": "supported",
+      "deadline_family_bonferroni": "supported",
+      "deadline_family_lower": 0.9928807143098191,
+      "deadline_family_upper": 0.9999939104584353
+    },
+    {
+      "condition": "E2_097",
+      "method": "CUSUM_p1_020",
+      "deadline": "10000",
+      "rate": "0.9965",
+      "global_bonferroni": "supported",
+      "global_holm": "supported",
+      "deadline_family_bonferroni": "supported",
+      "deadline_family_lower": 0.9883513197948102,
+      "deadline_family_upper": 0.9995093742817527
+    },
+    {
+      "condition": "E2_097",
+      "method": "mSR_finiteH",
+      "deadline": "10000",
+      "rate": "0.9965",
+      "global_bonferroni": "supported",
+      "global_holm": "supported",
+      "deadline_family_bonferroni": "supported",
+      "deadline_family_lower": 0.9883513197948102,
+      "deadline_family_upper": 0.9995093742817527
+    },
+    {
+      "condition": "E2_097",
+      "method": "periodic_binomial",
+      "deadline": "10000",
+      "rate": "0.9425",
+      "global_bonferroni": "supported",
+      "global_holm": "supported",
+      "deadline_family_bonferroni": "supported",
+      "deadline_family_lower": 0.9202332560547565,
+      "deadline_family_upper": 0.9603045431787925
+    }
+  ],
+  "scope": "Holm is a directional exact-test classification, not simultaneous confidence intervals. Deadline-specific families do not control the full cross-deadline family."
+}

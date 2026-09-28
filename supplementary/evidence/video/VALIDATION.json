@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "n_run_rows": 120000,
+  "n_summaries": 60,
+  "n_validation_conditions": 20,
+  "max_simultaneous_FA_upper": 0.03448129854744925,
+  "paired_groups": 16,
+  "tests": {
+    "passed": true,
+    "max_scalar_error": 5.684341886080802e-14,
+    "exact_binomial_n_checked": 999,
+    "boundary_arrival_checks": 4
+  }
+}

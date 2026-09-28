@@ -1,0 +1,390 @@
+{
+  "passed": true,
+  "family_size": 48,
+  "validation": [
+    {
+      "condition": 0,
+      "policy": "horizon_uniform",
+      "alarms": 1,
+      "n": 3000,
+      "upper": 0.0030585436398018794,
+      "passed": true
+    },
+    {
+      "condition": 0,
+      "policy": "block_uniform",
+      "alarms": 1,
+      "n": 3000,
+      "upper": 0.0030585436398018794,
+      "passed": true
+    },
+    {
+      "condition": 0,
+      "policy": "horizon_adaptive_q05",
+      "alarms": 0,
+      "n": 3000,
+      "upper": 0.0022863600495666987,
+      "passed": true
+    },
+    {
+      "condition": 0,
+      "policy": "horizon_adaptive_q20",
+      "alarms": 1,
+      "n": 3000,
+      "upper": 0.0030585436398018794,
+      "passed": true
+    },
+    {
+      "condition": 0,
+      "policy": "block_adaptive_q05",
+      "alarms": 1,
+      "n": 3000,
+      "upper": 0.0030585436398018794,
+      "passed": true
+    },
+    {
+      "condition": 0,
+      "policy": "block_adaptive_q20",
+      "alarms": 1,
+      "n": 3000,
+      "upper": 0.0030585436398018794,
+      "passed": true
+    },
+    {
+      "condition": 1,
+      "policy": "horizon_uniform",
+      "alarms": 39,
+      "n": 3000,
+      "upper": 0.020691503561402685,
+      "passed": true
+    },
+    {
+      "condition": 1,
+      "policy": "block_uniform",
+      "alarms": 34,
+      "n": 3000,
+      "upper": 0.018618130489098033,
+      "passed": true
+    },
+    {
+      "condition": 1,
+      "policy": "horizon_adaptive_q05",
+      "alarms": 31,
+      "n": 3000,
+      "upper": 0.01735937824225578,
+      "passed": true
+    },
+    {
+      "condition": 1,
+      "policy": "horizon_adaptive_q20",
+      "alarms": 40,
+      "n": 3000,
+      "upper": 0.021102916890607268,
+      "passed": true
+    },
+    {
+      "condition": 1,
+      "policy": "block_adaptive_q05",
+      "alarms": 28,
+      "n": 3000,
+      "upper": 0.016087667280797257,
+      "passed": true
+    },
+    {
+      "condition": 1,
+      "policy": "block_adaptive_q20",
+      "alarms": 42,
+      "n": 3000,
+      "upper": 0.02192279386932726,
+      "passed": true
+    },
+    {
+      "condition": 3,
+      "policy": "horizon_uniform",
+      "alarms": 3,
+      "n": 3000,
+      "upper": 0.004329595011539393,
+      "passed": true
+    },
+    {
+      "condition": 3,
+      "policy": "block_uniform",
+      "alarms": 2,
+      "n": 3000,
+      "upper": 0.003721007396281462,
+      "passed": true
+    },
+    {
+      "condition": 3,
+      "policy": "horizon_adaptive_q05",
+      "alarms": 0,
+      "n": 3000,
+      "upper": 0.0022863600495666987,
+      "passed": true
+    },
+    {
+      "condition": 3,
+      "policy": "horizon_adaptive_q20",
+      "alarms": 1,
+      "n": 3000,
+      "upper": 0.0030585436398018794,
+      "passed": true
+    },
+    {
+      "condition": 3,
+      "policy": "block_adaptive_q05",
+      "alarms": 1,
+      "n": 3000,
+      "upper": 0.0030585436398018794,
+      "passed": true
+    },
+    {
+      "condition": 3,
+      "policy": "block_adaptive_q20",
+      "alarms": 1,
+      "n": 3000,
+      "upper": 0.0030585436398018794,
+      "passed": true
+    },
+    {
+      "condition": 4,
+      "policy": "horizon_uniform",
+      "alarms": 56,
+      "n": 3000,
+      "upper": 0.027569954607552537,
+      "passed": true
+    },
+    {
+      "condition": 4,
+      "policy": "block_uniform",
+      "alarms": 54,
+      "n": 3000,
+      "upper": 0.026771760066232733,
+      "passed": true
+    },
+    {
+      "condition": 4,
+      "policy": "horizon_adaptive_q05",
+      "alarms": 42,
+      "n": 3000,
+      "upper": 0.02192279386932726,
+      "passed": true
+    },
+    {
+      "condition": 4,
+      "policy": "horizon_adaptive_q20",
+      "alarms": 48,
+      "n": 3000,
+      "upper": 0.02436110084048103,
+      "passed": true
+    },
+    {
+      "condition": 4,
+      "policy": "block_adaptive_q05",
+      "alarms": 41,
+      "n": 3000,
+      "upper": 0.021513335382741323,
+      "passed": true
+    },
+    {
+      "condition": 4,
+      "policy": "block_adaptive_q20",
+      "alarms": 52,
+      "n": 3000,
+      "upper": 0.025970985090757157,
+      "passed": true
+    },
+    {
+      "condition": 6,
+      "policy": "horizon_uniform",
+      "alarms": 0,
+      "n": 3000,
+      "upper": 0.0022863600495666987,
+      "passed": true
+    },
+    {
+      "condition": 6,
+      "policy": "block_uniform",
+      "alarms": 0,
+      "n": 3000,
+      "upper": 0.0022863600495666987,
+      "passed": true
+    },
+    {
+      "condition": 6,
+      "policy": "horizon_adaptive_q05",
+      "alarms": 0,
+      "n": 3000,
+      "upper": 0.0022863600495666987,
+      "passed": true
+    },
+    {
+      "condition": 6,
+      "policy": "horizon_adaptive_q20",
+      "alarms": 0,
+      "n": 3000,
+      "upper": 0.0022863600495666987,
+      "passed": true
+    },
+    {
+      "condition": 6,
+      "policy": "block_adaptive_q05",
+      "alarms": 0,
+      "n": 3000,
+      "upper": 0.0022863600495666987,
+      "passed": true
+    },
+    {
+      "condition": 6,
+      "policy": "block_adaptive_q20",
+      "alarms": 0,
+      "n": 3000,
+      "upper": 0.0022863600495666987,
+      "passed": true
+    },
+    {
+      "condition": 7,
+      "policy": "horizon_uniform",
+      "alarms": 27,
+      "n": 3000,
+      "upper": 0.015660545222437892,
+      "passed": true
+    },
+    {
+      "condition": 7,
+      "policy": "block_uniform",
+      "alarms": 27,
+      "n": 3000,
+      "upper": 0.015660545222437892,
+      "passed": true
+    },
+    {
+      "condition": 7,
+      "policy": "horizon_adaptive_q05",
+      "alarms": 28,
+      "n": 3000,
+      "upper": 0.016087667280797257,
+      "passed": true
+    },
+    {
+      "condition": 7,
+      "policy": "horizon_adaptive_q20",
+      "alarms": 19,
+      "n": 3000,
+      "upper": 0.012170945716584688,
+      "passed": true
+    },
+    {
+      "condition": 7,
+      "policy": "block_adaptive_q05",
+      "alarms": 23,
+      "n": 3000,
+      "upper": 0.013933518217976325,
+      "passed": true
+    },
+    {
+      "condition": 7,
+      "policy": "block_adaptive_q20",
+      "alarms": 28,
+      "n": 3000,
+      "upper": 0.016087667280797257,
+      "passed": true
+    },
+    {
+      "condition": 9,
+      "policy": "horizon_uniform",
+      "alarms": 0,
+      "n": 3000,
+      "upper": 0.0022863600495666987,
+      "passed": true
+    },
+    {
+      "condition": 9,
+      "policy": "block_uniform",
+      "alarms": 1,
+      "n": 3000,
+      "upper": 0.0030585436398018794,
+      "passed": true
+    },
+    {
+      "condition": 9,
+      "policy": "horizon_adaptive_q05",
+      "alarms": 0,
+      "n": 3000,
+      "upper": 0.0022863600495666987,
+      "passed": true
+    },
+    {
+      "condition": 9,
+      "policy": "horizon_adaptive_q20",
+      "alarms": 0,
+      "n": 3000,
+      "upper": 0.0022863600495666987,
+      "passed": true
+    },
+    {
+      "condition": 9,
+      "policy": "block_adaptive_q05",
+      "alarms": 0,
+      "n": 3000,
+      "upper": 0.0022863600495666987,
+      "passed": true
+    },
+    {
+      "condition": 9,
+      "policy": "block_adaptive_q20",
+      "alarms": 0,
+      "n": 3000,
+      "upper": 0.0022863600495666987,
+      "passed": true
+    },
+    {
+      "condition": 10,
+      "policy": "horizon_uniform",
+      "alarms": 21,
+      "n": 3000,
+      "upper": 0.013057259262767698,
+      "passed": true
+    },
+    {
+      "condition": 10,
+      "policy": "block_uniform",
+      "alarms": 23,
+      "n": 3000,
+      "upper": 0.013933518217976325,
+      "passed": true
+    },
+    {
+      "condition": 10,
+      "policy": "horizon_adaptive_q05",
+      "alarms": 11,
+      "n": 3000,
+      "upper": 0.008486288395262212,
+      "passed": true
+    },
+    {
+      "condition": 10,
+      "policy": "horizon_adaptive_q20",
+      "alarms": 24,
+      "n": 3000,
+      "upper": 0.014368270262026663,
+      "passed": true
+    },
+    {
+      "condition": 10,
+      "policy": "block_adaptive_q05",
+      "alarms": 23,
+      "n": 3000,
+      "upper": 0.013933518217976325,
+      "passed": true
+    },
+    {
+      "condition": 10,
+      "policy": "block_adaptive_q20",
+      "alarms": 31,
+      "n": 3000,
+      "upper": 0.01735937824225578,
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "condition": 5,
+  "a": "block_adaptive_q20",
+  "b": "block_uniform",
+  "difference": -0.0015,
+  "paired_bootstrap95": [
+    -0.01,
+    0.007
+  ],
+  "primary": true,
+  "provisional_go": false,
+  "interpretation": "only primary CI confirmatory; other CIs descriptive, no multiplicity adjustment"
+}

@@ -1,0 +1,22 @@
+{
+  "selection": {
+    "normal": "clean",
+    "mild": "brightness_0.4",
+    "clear": "blurblend_0.8"
+  },
+  "development_rates": {
+    "clean": 0.0,
+    "blurblend_0.35": 0.0,
+    "blurblend_0.5": 0.0,
+    "blurblend_0.65": 0.1,
+    "blurblend_0.8": 0.2833333333333333,
+    "blurblend_1.0": 0.3,
+    "brightness_0.6": 0.022222222222222223,
+    "brightness_0.4": 0.1388888888888889,
+    "brightness_0.2": 0.5111111111111111
+  },
+  "config_sha256": "98dafeb20b22f533fcb4530ce1fc64c5bf58b63ce6e342b6d11c1c34aa76e6ea",
+  "development_sha256": "7ad688f5bb43dbda42060952db554d1424ad04a219d27f1f68c922f16400fca9",
+  "frozen_before_evaluation": true,
+  "timestamp": 1789961779.3010392
+}

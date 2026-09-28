@@ -1,0 +1,46 @@
+{
+  "condition": "E2_105",
+  "role": "final",
+  "replicate_zero_based": 0,
+  "selection": "First evaluation replicate of the manuscript example; no path search or outcome filtering.",
+  "condition_parameters": {
+    "condition_id": "E2_105",
+    "unit": "production_items",
+    "prevalence": 0.1,
+    "audit_rate": 0.5,
+    "label_delay": 500,
+    "pre_risk": 0.05,
+    "post_risk": 0.2,
+    "first_change": 10000,
+    "post_length": 20000,
+    "horizon": 29999,
+    "regime": "abrupt",
+    "role": "primary_grid"
+  },
+  "seed_components": [
+    40000000,
+    20260922,
+    2,
+    105,
+    0
+  ],
+  "methods": [
+    "WH_finiteH",
+    "CUSUM_p1_012",
+    "CUSUM_p1_020",
+    "mSR_finiteH",
+    "periodic_binomial"
+  ],
+  "alarms": [
+    14026,
+    15690,
+    14026,
+    14045,
+    15000
+  ],
+  "recorded_alarms_match": true,
+  "source_sha256": "01b0d5e3e164be070ea7dee969569fc92e967ea2d68de7d62e88563ee2468ae7",
+  "record_sha256": "4a969459f98c63ed0cad5c69ffebca364cad294dedcacf10c64eda5e8402df93",
+  "deadline_item": 19999,
+  "display_end": 20999
+}
