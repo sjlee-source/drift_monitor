@@ -50,3 +50,15 @@ At the 10,000-item deadline, supported/insufficient/inconclusive counts across 3
 ## Integrity and citation
 
 `MANIFEST.json` records SHA-256 hashes of numerical evidence and source scripts. Source provenance is recorded in `PROVENANCE.json`. No journal publication DOI or Zenodo DOI has been assigned to this package. Cite a specific Git commit when referring to this version. A software/data reuse license has not yet been selected by the repository owner; public visibility alone does not grant an open-source license.
+
+## Alarm convention and betting-gain sensitivity
+
+All four continuous monitors use strict `statistic > calibrated_threshold`; the periodic test uses `p_value <= 0.02/K`. Calibration, null validation and evaluation use the same comparisons. For the betting monitor the statistic is log wealth; for mixture SR it is the log of the component mean.
+
+The implementation uses gain 4 and cap 9. Gains 2, 4 and 8 were checked with separate calibration and common streams in a six-condition representative slice. Their maximum stakes are 1.8, 3.6 and 7.2, so the cap is inactive.
+
+```bash
+python supplementary/stake_sensitivity/run_sensitivity.py
+```
+
+All 18 null-validation comparisons pass (maximum simultaneous upper bound 3.55%). Gain 4 reproduces the six archived first-alarm arrays exactly. For the strong change, q=0.50 is the lowest evaluated audit rate supporting 80% detection for all gains. This is a sensitivity result, not a claim that gain 4 is optimal. The analysis uses an 18-cell final family, distinct from the primary 1,020-cell family. CSV outputs retain full precision.

@@ -14,5 +14,19 @@
       "CUSUM p1=.12 and .20"
     ]
   },
-  "full_simulation_rerun": false
+  "full_simulation_rerun": false,
+  "gain_sensitivity": {
+    "status": "complete",
+    "max_null_upper": 0.03551082690193828,
+    "coefficient4_exact_alarm_matches": [
+      "E2_072",
+      "E2_073",
+      "E2_088",
+      "E2_089",
+      "E2_104",
+      "E2_105"
+    ],
+    "scalar_vector_max_abs_error": 0.0,
+    "strict_equality_check": "passed"
+  }
 }
