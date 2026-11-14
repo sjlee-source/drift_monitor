@@ -1,0 +1,70 @@
+{
+ "experiment": "E2b dependence-aware recalibration from finite history",
+ "experiment_id": 12,
+ "written": "2026-11-13 08:26:06",
+ "motivation": "CODEX_REVIEW.md item 5: deployable alternative to oracle recalibration",
+ "conditions": {
+  "variants": [
+   "base_iid",
+   "markov_phi0.3",
+   "markov_phi0.6",
+   "board_icc_r0.2"
+  ],
+  "q": [
+   0.2,
+   0.5
+  ],
+  "other": "pi .1, d 500, H 29999, tau 10000, r .05->.20 harmful (as E2)"
+ },
+ "monitors": [
+  "cusum_0.2",
+  "cusum_0.12",
+  "betting",
+  "msr",
+  "eSR",
+  "ewma",
+  "window_binomial"
+ ],
+ "thresholds": {
+  "iid_nominal": "E2 nominal (sim.calibrate base_iid, 20,000 calibration streams per null path, same seeds as E2)",
+  "oracle": "E2 recalibrated (sim.calibrate on the true variant; same seeds as E2) - evidence of recoverability only",
+  "estimated": "from ONE historical null stream per replicate: H_hist=30,000 items generated from the true variant at constant r=0.10 (boundary), same q and delay d=500, all labels with origin<=30,000 observed. Moving-block bootstrap on the production-item axis: blocks of L items, starts uniform on the 50-item board grid {0,50,...,30000-L}; blocks concatenated to 29,999 items; labels keep their within-block position; arrival = origin + 500; labels arriving after H dropped. B=2000 bootstrap streams per history and L; threshold = randomized calibrate_threshold at 0.02 on bootstrap maxima (const-null only; justification: in E2 the const null bound h* in all 56 oracle cells of these variants). PRIMARY estimated threshold = max over L in {50,250,1000} (small conservative grid; L=50 = board/cluster bootstrap). Secondary: each L alone.",
+  "same_procedure_all_variants": "the auditor does not know the dependence type: the identical procedure is applied to iid, Markov and board histories"
+ },
+ "history_randomness": "K=100 independent histories per (variant,q) (role pilot, condition 2000+10*q_index, replicate k; CRN across variants); bootstrap RNG SeedSequence(20261111, spawn_key=(8,12,3000+100*variant_index+10*q_index, k, L_index))",
+ "validation": {
+  "n": 10000,
+  "role": "validation",
+  "condition": "1000+10*q_index+path_index (paths: const .10=0, .05->.10 at tau=1, const .05=2)",
+  "replicates": "0..N-1 (namespace disjoint from E2)"
+ },
+ "evaluation": {
+  "n": 10000,
+  "role": "evaluation",
+  "condition": "1000+10*q_index+3",
+  "deadlines": [
+   5000,
+   10000,
+   20000
+  ],
+  "endpoint": "P(tau<=T<=tau+D-1)"
+ },
+ "estimands": {
+  "unconditional_FA": "FA of the procedure averaged over history randomness. PRIMARY test uses a diagonal design: validation stream j is paired with history j mod K, so the N alarm indicators are i.i.d. Bernoulli(unconditional FA) -> exact CP.",
+  "conditional_FA": "each history threshold applied to all N validation streams: distribution over histories (mean, p50, p90, max, P(FA_k>0.03)); the cross mean is the precise point estimate.",
+  "pD": "mean over histories x streams (procedure p_D), distribution over histories, paired difference vs oracle and vs iid-nominal on identical streams (CI by normal approx over streams, conditional on histories)."
+ },
+ "success_criterion": "estimated PRIMARY procedure: simultaneous one-sided 95% CP upper bound on the unconditional FA (diagonal design) <= 0.03 in every cell of the family = 4 variants x 2 q x 7 monitors x 2 null paths (const .10, path .05->.10) = 112 cells, Bonferroni alpha=0.05/112, bound = beta.ppf(1-0.05/112, k+1, n-k). const .05 FA reported, not in family. Detection loss is reported as the price, not a criterion. Secondary (descriptive): P_hist(conditional FA > 0.03).",
+ "saved_per_stream": "npz per (variant,q): uint16 alarm items (65535 = none) for nominal and oracle on all 4 paths; for the primary estimated thresholds: harmful-path alarm items (K x N uint16) and null-path alarm indicators (packbits, K x N); diagonal assignment j mod K.",
+ "resources": "<=4 threads (NUMBA_NUM_THREADS=4), chunks of 5,000 streams, no GPU",
+ "not_done": "history at r<0.10 (realistic in-control history) is NOT studied: the history is generated at the boundary r0, as the oracle calibration is; design-effect inflation not used as a solution.",
+ "amendment_2026-11-13_POST_HOC": {
+  "written": "2026-11-13 08:43:50",
+  "label": "POST HOC, added after seeing the prespecified E2b results (estimated procedure failed: 37/112 cells gate; even iid failed)",
+  "diagnosis": "per-history conditional FA strongly negatively correlated with the history realized miss rate (corr -0.68..-0.78): the bootstrap reproduces the history rate, not the boundary r0",
+  "variant_PH1": "recentred block bootstrap: same as primary, but every bootstrap label is independently flipped so that its marginal rate is r0=0.10 (0->1 w.p. (r0-rhat)/(1-rhat) if rhat<r0, 1->0 w.p. 1-r0/rhat otherwise; rhat = history miss rate); H_hist=30,000",
+  "variant_PH2": "PH1 with a 5x longer history H_hist=150,000 items",
+  "everything_else": "identical (K=100, B=2000, L grid {50,250,1000} max, same validation/evaluation streams); bootstrap RNG spawn_key adds +50000 (PH1) / +60000 (PH2) to the condition id",
+  "status": "exploratory; does not replace the prespecified result"
+ }
+}

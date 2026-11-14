@@ -1,0 +1,17 @@
+{
+ "const_d500_D10000": {
+  "streams": 12,
+  "labels": 10422
+ },
+ "const_d0_D2000": {
+  "streams": 12,
+  "labels": 17821
+ },
+ "geom_mean300_D3000": {
+  "streams": 12,
+  "labels": 10494
+ },
+ "max_abs_path_error": 0.0,
+ "values_compared": 38737,
+ "pass": true
+}

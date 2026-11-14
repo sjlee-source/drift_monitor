@@ -1,0 +1,30 @@
+{
+ "cusum_0.2": {
+  "h": 3.724227776120393,
+  "gamma": 0.5,
+  "n_tie": 2,
+  "val_rate": 0.0237,
+  "strict_os_rate": 0.0198
+ },
+ "periodic": {
+  "h": 5.042101819141589,
+  "gamma": 0.6,
+  "n_tie": 5,
+  "val_rate": 0.02315,
+  "strict_os_rate": 0.0194
+ },
+ "winbin": {
+  "h": 5.274324741093235,
+  "gamma": 0.0,
+  "n_tie": 1,
+  "val_rate": 0.02195,
+  "strict_os_rate": 0.0194
+ },
+ "glr": {
+  "h": 6.907755278982137,
+  "gamma": 0.2153846153846154,
+  "n_tie": 195,
+  "val_rate": 0.0208,
+  "strict_os_rate": 0.0116
+ }
+}

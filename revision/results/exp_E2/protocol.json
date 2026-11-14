@@ -1,0 +1,128 @@
+{
+ "experiment": "E2 robustness",
+ "experiment_id": 12,
+ "written": "2026-11-11 23:24:42",
+ "base": {
+  "pi": 0.1,
+  "r_pre": 0.05,
+  "r0": 0.1,
+  "r1": 0.2,
+  "d": 500,
+  "H": 29999,
+  "tau": 10000,
+  "q": [
+   0.2,
+   0.5
+  ],
+  "deadlines": [
+   5000,
+   10000,
+   20000
+  ],
+  "primary_D": 10000
+ },
+ "monitors": [
+  "cusum_0.2",
+  "cusum_0.12",
+  "betting",
+  "msr",
+  "eSR",
+  "ewma",
+  "window_binomial"
+ ],
+ "monitor_settings": "revision.monitors.default_suite defaults (betting gain4/cap9/window50; msr 5 stakes; eSR alpha_design=1e-3 min_gap .02; ewma lam .05; window_binomial W=200)",
+ "variants": {
+  "base_iid": {},
+  "markov_phi0.3": {
+   "cfg": {
+    "markov_rho": 0.3
+   }
+  },
+  "markov_phi0.6": {
+   "cfg": {
+    "markov_rho": 0.6
+   }
+  },
+  "board_icc_r0.2": {
+   "cfg": {
+    "board_size": 50,
+    "icc_r": 0.2
+   }
+  },
+  "board_icc_pi0.1": {
+   "cfg": {
+    "board_size": 50,
+    "icc_pi": 0.1
+   }
+  },
+  "ramp_5000": {
+   "ramp": 5000
+  },
+  "ramp_2000": {
+   "ramp": 2000
+  },
+  "prev_step_x2": {
+   "prev": {
+    "kind": "step",
+    "pi": 0.1,
+    "pi_post": 0.2,
+    "tau": 10000
+   }
+  },
+  "prev_sin_50pct": {
+   "prev": {
+    "kind": "sinusoid",
+    "pi": 0.1,
+    "amplitude": 0.5,
+    "period": 10000
+   }
+  },
+  "delay_geom500": {
+   "delay": "('geometric', 500)"
+  },
+  "delay_lognorm_med500_s1": {
+   "delay": "('lognormal', np.float64(824.3606353500641), 1.0)"
+  },
+  "delay_batch1000": {
+   "delay": "('batch', 1000)"
+  },
+  "labelnoise_e10_.05_e01_.01": {
+   "cfg": {
+    "e10": 0.05,
+    "e01": 0.01
+   }
+  }
+ },
+ "variant_notes": {
+  "markov": "markov_rho (paper: phi) = lag-1 corr of misses over successive DEFECTIVE items (markov_over=defect)",
+  "board": "consecutive boards of 50 items; Beta random effect, ICC on r (0.2) or on pi (0.1) separately",
+  "ramp": "linear r from 0.05 at tau-1 to r1 at tau+L-1; null path variant = same-length ramp 0.05->0.10",
+  "prevalence": "applied to all paths (null and harmful); step pi 0.1->0.2 at tau; sinusoid pi(1+0.5 sin(2 pi t/1e4))",
+  "delay": "geometric on {0,1,..} mean 500; lognormal median 500 sigma 1 (mean 824); batch release at ends of 1000-item shifts (mean ~500)",
+  "labelnoise": "e10=P(label 0|true miss)=0.05, e01=P(label 1|true non-miss)=0.01; noisy-label rate r'=r(1-e10)+(1-r)e01"
+ },
+ "calibration": {
+  "rule": "h*=max(h_const,h_path) two-point composite null, randomized ties, target 0.02, 20000 streams per null path, role=calibration",
+  "nominal": "calibrated under base_iid model (PRIMARY)",
+  "recalibrated": "same rule on null streams of the variant (SECONDARY)"
+ },
+ "validation": {
+  "n": 10000,
+  "role": "validation",
+  "paths": [
+   "null_const010",
+   "null_path(variant)",
+   "null_const005"
+  ],
+  "ci": "exact Clopper-Pearson; gate one-sided 95% upper <= 0.03 with Bonferroni over family",
+  "family": "nominal-threshold FA cells: 7 monitors x 2 q x 2 null paths (const010, path) x 13 variants = 364"
+ },
+ "evaluation": {
+  "n": 10000,
+  "role": "evaluation",
+  "endpoint": "P(tau<=T<=tau+D-1), unconditional"
+ },
+ "seeding": "rng.stream_states(role, 12, condition=10*q_index+path_index, replicate); condition ids shared across variants (common random numbers; paired with base)",
+ "classification_prespecified": "FA control broken: nominal-threshold FA simultaneous one-sided upper bound > 0.03 AND point FA > 0.03; inflated-but-gated: point FA > 0.02 with sim. lower CP bound > 0.02",
+ "planning_part": "stressor 7 by exact DP (theory/exact_cusum.py, converse.py); see plan_dp.py"
+}

@@ -1,0 +1,102 @@
+c0 wf0 P1_horizon_uniform: h_msr=9.456 (const 9.456, path 9.059) h_bet=2.386 FAmsr=0.0242/0.0111 pD10k_msr=0.7825 aud=6000 24s
+c0 wf0 P2_block_uniform: h_msr=9.486 (const 9.486, path 9.009) h_bet=2.419 FAmsr=0.0242/0.0111 pD10k_msr=0.7809 aud=6000 24s
+   iter 0: warn from h=9.4863 -> calibrated 9.4859
+c0 wf0 P3_horizon_warn_q05: h_msr=9.486 (const 9.486, path 9.293) h_bet=2.417 FAmsr=0.0176/0.0165 pD10k_msr=0.1148 aud=6000 21s
+   iter 0: warn from h=9.4863 -> calibrated 9.4978
+c0 wf0 P3_horizon_warn_q20: h_msr=9.498 (const 9.498, path 9.080) h_bet=2.390 FAmsr=0.0226/0.0117 pD10k_msr=0.8135 aud=6000 23s
+   iter 0: warn from h=9.4863 -> calibrated 9.4063
+   iter 1: warn from h=9.4063 -> calibrated 9.4034
+c0 wf0 P3_block_warn_q05: h_msr=9.403 (const 9.403, path 8.981) h_bet=2.357 FAmsr=0.0226/0.0129 pD10k_msr=0.8087 aud=6000 29s
+   iter 0: warn from h=9.4863 -> calibrated 9.4952
+c0 wf0 P3_block_warn_q20: h_msr=9.495 (const 9.495, path 9.090) h_bet=2.408 FAmsr=0.0234/0.0115 pD10k_msr=0.7995 aud=6000 20s
+   iter 0: warn from h=9.4863 -> calibrated 9.4943
+c0 wf0 P3x_horizon_logwarn_q05: h_msr=9.494 (const 9.494, path 8.817) h_bet=2.424 FAmsr=0.0194/0.0087 pD10k_msr=0.9444 aud=6000 20s
+   iter 0: warn from h=9.4863 -> calibrated 9.4722
+c0 wf0 P3x_horizon_logwarn_q20: h_msr=9.472 (const 9.472, path 7.860) h_bet=2.451 FAmsr=0.0196/0.0033 pD10k_msr=0.6331 aud=6000 21s
+   iter 0: warn from h=9.4863 -> calibrated 9.4969
+c0 wf0 P3x_block_logwarn_q05: h_msr=9.497 (const 9.497, path 8.921) h_bet=2.357 FAmsr=0.0207/0.0102 pD10k_msr=0.7805 aud=6000 21s
+   iter 0: warn from h=9.4863 -> calibrated 9.4772
+c0 wf0 P3x_block_logwarn_q20: h_msr=9.477 (const 9.477, path 8.921) h_bet=2.369 FAmsr=0.0214/0.0103 pD10k_msr=0.7823 aud=6000 22s
+c0 wf0 P4_uncertainty: h_msr=10.497 (const 10.497, path 10.082) h_bet=3.251 FAmsr=0.0194/0.0127 pD10k_msr=0.3508 aud=6000 30s
+c0 wf0 P5_score_stratified: h_msr=10.561 (const 10.561, path 10.223) h_bet=3.234 FAmsr=0.0207/0.0163 pD10k_msr=0.2133 aud=6000 28s
+c0 wf0 P6_neyman: h_msr=9.087 (const 9.087, path 8.567) h_bet=2.224 FAmsr=0.0197/0.0120 pD10k_msr=0.8759 aud=6000 27s
+c0 wf1 B1_passed_uniform: h_msr=11.214 (const 11.214, path 10.762) h_bet=3.494 FAmsr=0.0227/0.0129 pD10k_msr=0.9477 aud=6000 27s
+c0 wf1 B2_passed_block_uniform: h_msr=11.168 (const 11.168, path 10.711) h_bet=3.487 FAmsr=0.0221/0.0131 pD10k_msr=0.9448 aud=5999 28s
+   iter 0: warn from h=11.1681 -> calibrated 11.0208
+   iter 1: warn from h=11.0208 -> calibrated 11.0126
+c0 wf1 B3_passed_block_warn: h_msr=11.013 (const 11.013, path 10.595) h_bet=3.392 FAmsr=0.0203/0.0140 pD10k_msr=0.9318 aud=5956 38s
+c0 wf1 B4_passed_uncertainty: h_msr=11.293 (const 11.293, path 10.852) h_bet=3.428 FAmsr=0.0222/0.0099 pD10k_msr=0.9800 aud=6000 29s
+c0 wf1 B5_passed_score_stratified: h_msr=11.279 (const 11.279, path 10.821) h_bet=3.480 FAmsr=0.0191/0.0094 pD10k_msr=0.9762 aud=6000 29s
+c0 wf1 B6_passed_neyman: h_msr=11.237 (const 11.237, path 10.811) h_bet=3.511 FAmsr=0.0220/0.0099 pD10k_msr=0.9800 aud=6000 27s
+c1 wf0 P1_horizon_uniform: h_msr=9.531 (const 9.531, path 9.043) h_bet=2.365 FAmsr=0.0183/0.0110 pD10k_msr=0.8084 aud=6000 17s
+c1 wf0 P2_block_uniform: h_msr=9.516 (const 9.516, path 9.056) h_bet=2.418 FAmsr=0.0175/0.0109 pD10k_msr=0.8072 aud=6000 16s
+   iter 0: warn from h=9.5158 -> calibrated 9.4938
+   iter 1: warn from h=9.4938 -> calibrated 9.4928
+c1 wf0 P3_horizon_warn_q05: h_msr=9.493 (const 9.493, path 9.462) h_bet=2.397 FAmsr=0.0216/0.0170 pD10k_msr=0.1126 aud=6000 22s
+   iter 0: warn from h=9.5158 -> calibrated 9.5077
+c1 wf0 P3_horizon_warn_q20: h_msr=9.508 (const 9.508, path 9.082) h_bet=2.371 FAmsr=0.0187/0.0125 pD10k_msr=0.8468 aud=6000 18s
+   iter 0: warn from h=9.5158 -> calibrated 9.4379
+   iter 1: warn from h=9.4379 -> calibrated 9.4379
+c1 wf0 P3_block_warn_q05: h_msr=9.438 (const 9.438, path 9.131) h_bet=2.289 FAmsr=0.0214/0.0146 pD10k_msr=0.8098 aud=6000 28s
+   iter 0: warn from h=9.5158 -> calibrated 9.5368
+   iter 1: warn from h=9.5368 -> calibrated 9.5447
+c1 wf0 P3_block_warn_q20: h_msr=9.545 (const 9.545, path 9.086) h_bet=2.397 FAmsr=0.0190/0.0114 pD10k_msr=0.8352 aud=6000 31s
+   iter 0: warn from h=9.5158 -> calibrated 9.4867
+   iter 1: warn from h=9.4867 -> calibrated 9.4986
+c1 wf0 P3x_horizon_logwarn_q05: h_msr=9.499 (const 9.499, path 8.840) h_bet=2.345 FAmsr=0.0199/0.0102 pD10k_msr=0.9456 aud=6000 27s
+   iter 0: warn from h=9.5158 -> calibrated 9.4908
+   iter 1: warn from h=9.4908 -> calibrated 9.4799
+c1 wf0 P3x_horizon_logwarn_q20: h_msr=9.480 (const 9.480, path 7.832) h_bet=2.353 FAmsr=0.0194/0.0028 pD10k_msr=0.5583 aud=6000 33s
+   iter 0: warn from h=9.5158 -> calibrated 9.5239
+c1 wf0 P3x_block_logwarn_q05: h_msr=9.524 (const 9.524, path 8.943) h_bet=2.385 FAmsr=0.0186/0.0102 pD10k_msr=0.7750 aud=6000 19s
+   iter 0: warn from h=9.5158 -> calibrated 9.4999
+c1 wf0 P3x_block_logwarn_q20: h_msr=9.500 (const 9.500, path 8.942) h_bet=2.375 FAmsr=0.0198/0.0106 pD10k_msr=0.7770 aud=6000 17s
+c1 wf0 P4_uncertainty: h_msr=10.668 (const 10.668, path 10.105) h_bet=3.367 FAmsr=0.0163/0.0081 pD10k_msr=0.3543 aud=6000 28s
+c1 wf0 P5_score_stratified: h_msr=10.658 (const 10.658, path 10.297) h_bet=3.204 FAmsr=0.0197/0.0118 pD10k_msr=0.2224 aud=6000 30s
+c1 wf0 P6_neyman: h_msr=9.061 (const 9.061, path 8.678) h_bet=2.171 FAmsr=0.0206/0.0123 pD10k_msr=0.9017 aud=6000 25s
+c1 wf1 B1_passed_uniform: h_msr=11.194 (const 11.194, path 10.865) h_bet=3.383 FAmsr=0.0211/0.0109 pD10k_msr=0.9609 aud=6000 23s
+c1 wf1 B2_passed_block_uniform: h_msr=11.177 (const 11.177, path 10.803) h_bet=3.360 FAmsr=0.0205/0.0117 pD10k_msr=0.9563 aud=5999 28s
+   iter 0: warn from h=11.1773 -> calibrated 11.0600
+   iter 1: warn from h=11.0600 -> calibrated 11.0307
+   iter 2: warn from h=11.0307 -> calibrated 11.0293
+c1 wf1 B3_passed_block_warn: h_msr=11.029 (const 11.029, path 10.843) h_bet=3.346 FAmsr=0.0211/0.0132 pD10k_msr=0.9455 aud=5957 47s
+c1 wf1 B4_passed_uncertainty: h_msr=11.301 (const 11.301, path 10.895) h_bet=3.433 FAmsr=0.0196/0.0095 pD10k_msr=0.9851 aud=6000 29s
+c1 wf1 B5_passed_score_stratified: h_msr=11.314 (const 11.314, path 10.878) h_bet=3.413 FAmsr=0.0192/0.0102 pD10k_msr=0.9824 aud=6000 25s
+c1 wf1 B6_passed_neyman: h_msr=11.270 (const 11.270, path 10.847) h_bet=3.434 FAmsr=0.0195/0.0108 pD10k_msr=0.9865 aud=6000 34s
+c2 wf0 P1_horizon_uniform: h_msr=6.507 (const 6.507, path 6.193) h_bet=1.545 FAmsr=0.0195/0.0128 pD10k_msr=0.0869 aud=6000 16s
+c2 wf0 P2_block_uniform: h_msr=6.514 (const 6.514, path 6.191) h_bet=1.539 FAmsr=0.0184/0.0122 pD10k_msr=0.0880 aud=6000 18s
+   iter 0: warn from h=6.5137 -> calibrated 6.3796
+   iter 1: warn from h=6.3796 -> calibrated 6.4037
+   iter 2: warn from h=6.4037 -> calibrated 6.4037
+c2 wf0 P3_horizon_warn_q05: h_msr=6.404 (const 6.333, path 6.404) h_bet=1.490 FAmsr=0.0216/0.0192 pD10k_msr=0.0059 aud=6000 36s
+   iter 0: warn from h=6.5137 -> calibrated 6.5295
+c2 wf0 P3_horizon_warn_q20: h_msr=6.530 (const 6.530, path 6.193) h_bet=1.558 FAmsr=0.0184/0.0138 pD10k_msr=0.1028 aud=6000 16s
+   iter 0: warn from h=6.5137 -> calibrated 6.5050
+c2 wf0 P3_block_warn_q05: h_msr=6.505 (const 6.505, path 6.146) h_bet=1.550 FAmsr=0.0162/0.0133 pD10k_msr=0.0983 aud=6000 14s
+   iter 0: warn from h=6.5137 -> calibrated 6.5606
+   iter 1: warn from h=6.5606 -> calibrated 6.5583
+c2 wf0 P3_block_warn_q20: h_msr=6.558 (const 6.558, path 6.208) h_bet=1.558 FAmsr=0.0193/0.0121 pD10k_msr=0.0960 aud=6000 22s
+   iter 0: warn from h=6.5137 -> calibrated 6.4866
+   iter 1: warn from h=6.4866 -> calibrated 6.4866
+c2 wf0 P3x_horizon_logwarn_q05: h_msr=6.487 (const 6.487, path 6.324) h_bet=1.527 FAmsr=0.0207/0.0185 pD10k_msr=0.1548 aud=6000 30s
+   iter 0: warn from h=6.5137 -> calibrated 6.5108
+c2 wf0 P3x_horizon_logwarn_q20: h_msr=6.511 (const 6.511, path 5.729) h_bet=1.558 FAmsr=0.0217/0.0073 pD10k_msr=0.1406 aud=6000 16s
+   iter 0: warn from h=6.5137 -> calibrated 6.5742
+   iter 1: warn from h=6.5742 -> calibrated 6.5635
+c2 wf0 P3x_block_logwarn_q05: h_msr=6.564 (const 6.564, path 6.119) h_bet=1.527 FAmsr=0.0202/0.0116 pD10k_msr=0.0816 aud=6000 30s
+   iter 0: warn from h=6.5137 -> calibrated 6.5375
+   iter 1: warn from h=6.5375 -> calibrated 6.5375
+c2 wf0 P3x_block_logwarn_q20: h_msr=6.537 (const 6.537, path 6.121) h_bet=1.498 FAmsr=0.0208/0.0119 pD10k_msr=0.0829 aud=6000 25s
+c2 wf0 P4_uncertainty: h_msr=7.650 (const 7.650, path 7.469) h_bet=1.956 FAmsr=0.0186/0.0152 pD10k_msr=0.0323 aud=6000 23s
+c2 wf0 P5_score_stratified: h_msr=7.848 (const 7.848, path 7.647) h_bet=2.007 FAmsr=0.0187/0.0156 pD10k_msr=0.0393 aud=6000 26s
+c2 wf0 P6_neyman: h_msr=6.533 (const 6.533, path 6.243) h_bet=1.589 FAmsr=0.0186/0.0137 pD10k_msr=0.0921 aud=6000 22s
+c2 wf1 B1_passed_uniform: h_msr=8.610 (const 8.610, path 8.161) h_bet=2.986 FAmsr=0.0166/0.0131 pD10k_msr=0.1228 aud=6000 19s
+c2 wf1 B2_passed_block_uniform: h_msr=8.586 (const 8.586, path 8.145) h_bet=2.945 FAmsr=0.0176/0.0124 pD10k_msr=0.1223 aud=5999 20s
+   iter 0: warn from h=8.5859 -> calibrated 8.3680
+   iter 1: warn from h=8.3680 -> calibrated 8.3372
+   iter 2: warn from h=8.3372 -> calibrated 8.3198
+c2 wf1 B3_passed_block_warn: h_msr=8.320 (const 8.320, path 7.984) h_bet=2.721 FAmsr=0.0178/0.0133 pD10k_msr=0.1301 aud=5929 40s
+c2 wf1 B4_passed_uncertainty: h_msr=8.480 (const 8.480, path 8.094) h_bet=2.644 FAmsr=0.0191/0.0128 pD10k_msr=0.1655 aud=6000 25s
+c2 wf1 B5_passed_score_stratified: h_msr=8.581 (const 8.581, path 8.189) h_bet=2.681 FAmsr=0.0160/0.0122 pD10k_msr=0.1530 aud=6000 28s
+c2 wf1 B6_passed_neyman: h_msr=8.566 (const 8.566, path 8.136) h_bet=2.766 FAmsr=0.0180/0.0120 pD10k_msr=0.1576 aud=6000 23s
+done

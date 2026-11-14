@@ -1,0 +1,8 @@
+{
+ "family": 112,
+ "msr_max_upper": 0.0309422408407479,
+ "bet_max_upper": 0.030392287375687936,
+ "msr_all_pass": false,
+ "bet_all_pass": false,
+ "native_bet_max": 0.0152
+}

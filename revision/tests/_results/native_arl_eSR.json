@@ -1,0 +1,1 @@
+{"streams": 40, "H": 400000, "alarms": 11457, "items": 16000000, "alarms_per_10k": 7.160625, "alarms_per_10k_lo": 7.030099593934013, "alarms_per_10k_hi": 7.292965061925455, "arl_items": 1396.526141223706, "arl_items_lo": 1371.1844106051217, "arl_items_hi": 1422.454954781664, "any_alarm_rate": 1.0, "arl_labels": 698.263070611853, "arl_labels_lo": 685.5922053025608, "bound": 500.0}

@@ -1,0 +1,4 @@
+method,old_conditional,new_twoway,n,new_full_poisson,new_normal
+estimated,37,19,112,20,21
+posthoc_PH1,73,71,112,69,72
+posthoc_PH2,93,93,112,93,93

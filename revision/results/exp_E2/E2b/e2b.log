@@ -1,0 +1,17 @@
+q=0.2 base_iid thresholds 58s
+q=0.2 base_iid done 77s
+q=0.2 markov_phi0.3 thresholds 67s
+q=0.2 markov_phi0.3 done 82s
+q=0.2 markov_phi0.6 thresholds 71s
+q=0.2 markov_phi0.6 done 86s
+q=0.2 board_icc_r0.2 thresholds 75s
+q=0.2 board_icc_r0.2 done 96s
+q=0.5 base_iid thresholds 101s
+q=0.5 base_iid done 118s
+q=0.5 markov_phi0.3 thresholds 118s
+q=0.5 markov_phi0.3 done 135s
+q=0.5 markov_phi0.6 thresholds 118s
+q=0.5 markov_phi0.6 done 136s
+q=0.5 board_icc_r0.2 thresholds 119s
+q=0.5 board_icc_r0.2 done 140s
+total done

@@ -1,0 +1,2 @@
+variant,family,pi,r1,d,q_min_point_20k,q_min_lower_20k,q_oracle_20k,q_cusum_exact_20k,nonmonotone_pass_fail_20k,q_min_point_100k,q_min_lower_100k,q_oracle_100k,q_cusum_exact_100k,nonmonotone_pass_fail_100k
+msr,core,0.1,0.2,0,0.2,0.3,0.100112494139988,0.1778279410038923,0,0.2,0.2,0.100112494139988,0.1778279410038923,0

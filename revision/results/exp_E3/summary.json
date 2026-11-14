@@ -1,0 +1,26 @@
+{
+ "gate": {
+  "family": 114,
+  "cap": 0.03,
+  "msr_all_pass": true,
+  "bet_all_pass": true,
+  "msr_max_upper": 0.02974027044787539,
+  "bet_max_upper": 0.028968348215860043,
+  "native_bet_max": 0.0134
+ },
+ "primary": [
+  {
+   "condition": "pi0.10_d500",
+   "workflow": "W-A",
+   "policy": "P5_score_stratified",
+   "reference": "P1_horizon_uniform",
+   "monitor": "msr",
+   "D": 10000,
+   "diff": -0.5692,
+   "boot_lo": -0.5794,
+   "boot_hi": -0.559,
+   "primary": true,
+   "note": "PRIMARY (prespecified)"
+  }
+ ]
+}

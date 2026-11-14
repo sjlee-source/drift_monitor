@@ -1,0 +1,21 @@
+0.2 base_iid null_const010
+0.2 base_iid null_path
+0.2 markov_phi0.3 null_const010
+0.2 markov_phi0.3 null_path
+0.2 markov_phi0.6 null_const010
+0.2 markov_phi0.6 null_path
+0.2 board_icc_r0.2 null_const010
+0.2 board_icc_r0.2 null_path
+0.5 base_iid null_const010
+0.5 base_iid null_path
+0.5 markov_phi0.3 null_const010
+0.5 markov_phi0.3 null_path
+0.5 markov_phi0.6 null_const010
+0.5 markov_phi0.6 null_path
+0.5 board_icc_r0.2 null_const010
+0.5 board_icc_r0.2 null_path
+             old_conditional  new_twoway    n  new_full_poisson  new_normal
+method                                                                     
+estimated                 37          19  112                20          21
+posthoc_PH1               73          71  112                69          72
+posthoc_PH2               93          93  112                93          93

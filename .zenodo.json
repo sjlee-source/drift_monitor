@@ -1,0 +1,11 @@
+{
+  "title": "drift_monitor: code and numerical evidence for audit-limited manufacturing inspection monitoring",
+  "upload_type": "software",
+  "description": "Simulation library, exact finite-horizon CUSUM computation, detection-limit (Neyman-Pearson) calculations, experiment pipelines (matched comparison, robustness, audit allocation, AOI replays), prespecified protocols, seeds and numerical results for the study 'Manufacturing Inspection Monitoring under Sparse and Delayed Audits: Detection Limits and Audit Planning'. The PCB replay of the study uses proprietary data; its data, code and results are not included.",
+  "creators": [
+    {"name": "Lee, Sangjeong", "affiliation": "Tech University of Korea", "orcid": "0000-0002-1350-9434"},
+    {"name": "Bae, You-Suk", "affiliation": "Tech University of Korea", "orcid": "0000-0003-4629-4801"}
+  ],
+  "license": "MIT",
+  "keywords": ["sequential change detection", "CUSUM", "audit sampling", "delayed labels", "automated optical inspection", "statistical process monitoring"]
+}

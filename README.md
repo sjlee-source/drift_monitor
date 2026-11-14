@@ -1,5 +1,16 @@
 # Audit-limited manufacturing inspection monitoring
 
+## Revision (v2.0.0)
+
+The `revision/` directory contains the material for the revised manuscript: a tested simulation library
+(`revision/README_REVISION.md`), the exact CUSUM and detection-limit computations, the experiment pipelines E1–E4,
+prespecified protocols and the numerical results (`revision/results/`). Step-by-step rerun instructions are in
+`revision/REPRODUCE.md`. Every stream is regenerated from `SeedSequence(20261111, spawn_key=(role, experiment,
+condition, replicate))`. Only the public AOI data are used in the published replay code; the PCB replay of the manuscript relies on
+proprietary data, and its code and results are not included. The public AOI data are available from Mendeley Data
+(doi:10.17632/99jzmh9658.2). The original archive described below is retained unchanged.
+
+
 Reproducibility code and numerical evidence for **Manufacturing Inspection Monitoring under Sparse and Delayed Audits: Detection Limits and Audit Planning**.
 
 The contribution is operational characterization and audit planning. Five established monitors are compared: predictable betting, CUSUM with alternatives 0.12 and 0.20, mixture Shiryaev–Roberts, and periodic exact-binomial checks. No algorithmic superiority is claimed for the betting implementation.
@@ -49,7 +60,7 @@ At the 10,000-item deadline, supported/insufficient/inconclusive counts across 3
 
 ## Integrity and citation
 
-`MANIFEST.json` records SHA-256 hashes of numerical evidence and source scripts. Source provenance is recorded in `PROVENANCE.json`. No journal publication DOI or Zenodo DOI has been assigned to this package. Cite a specific Git commit when referring to this version. A software/data reuse license has not yet been selected by the repository owner; public visibility alone does not grant an open-source license.
+`MANIFEST.json` records SHA-256 hashes of numerical evidence and source scripts. Source provenance is recorded in `PROVENANCE.json`. Release v2.0.0 is archived on Zenodo (see CITATION.cff); cite the release DOI. The code is released under the MIT License (see LICENSE).
 
 ## Alarm convention and betting-gain sensitivity
 

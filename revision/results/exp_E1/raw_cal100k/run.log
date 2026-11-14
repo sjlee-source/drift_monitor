@@ -1,0 +1,289 @@
+[   54.8s] cal const10 done
+[   90.1s] cal path done
+[  103.2s] val const10 done
+[  106.4s] val path done
+[  109.8s] val const05 done
+[  113.4s] eval r1 0.12 done
+[  116.8s] eval r1 0.2 done
+[  120.3s] eval r1 0.3 done
+[  120.4s] wrote setting 0
+[   55.5s] cal const10 done
+[   85.8s] cal path done
+[   98.0s] val const10 done
+[  101.5s] val path done
+[  104.8s] val const05 done
+[  108.6s] eval r1 0.12 done
+[  112.1s] eval r1 0.2 done
+[  115.6s] eval r1 0.3 done
+[  115.7s] wrote setting 1
+[   52.1s] cal const10 done
+[   87.4s] cal path done
+[  100.0s] val const10 done
+[  103.5s] val path done
+[  106.7s] val const05 done
+[  110.4s] eval r1 0.12 done
+[  113.9s] eval r1 0.2 done
+[  117.4s] eval r1 0.3 done
+[  117.5s] wrote setting 2
+[   50.6s] cal const10 done
+[   82.0s] cal path done
+[   94.2s] val const10 done
+[   97.4s] val path done
+[  100.9s] val const05 done
+[  103.4s] eval r1 0.12 done
+[  105.9s] eval r1 0.2 done
+[  108.9s] eval r1 0.3 done
+[  109.0s] wrote setting 3
+[   48.5s] cal const10 done
+[   76.9s] cal path done
+[   90.4s] val const10 done
+[   93.6s] val path done
+[   96.8s] val const05 done
+[   99.4s] eval r1 0.12 done
+[  102.0s] eval r1 0.2 done
+[  104.5s] eval r1 0.3 done
+[  104.6s] wrote setting 4
+[   45.1s] cal const10 done
+[   72.6s] cal path done
+[   83.4s] val const10 done
+[   86.2s] val path done
+[   88.9s] val const05 done
+[   91.5s] eval r1 0.12 done
+[   94.0s] eval r1 0.2 done
+[   96.5s] eval r1 0.3 done
+[   96.6s] wrote setting 5
+[   47.0s] cal const10 done
+[   75.2s] cal path done
+[   86.3s] val const10 done
+[   89.1s] val path done
+[   92.0s] val const05 done
+[   94.7s] eval r1 0.12 done
+[   97.3s] eval r1 0.2 done
+[   99.9s] eval r1 0.3 done
+[   99.9s] wrote setting 6
+[   44.1s] cal const10 done
+[   72.3s] cal path done
+[   83.6s] val const10 done
+[   86.7s] val path done
+[   89.7s] val const05 done
+[   92.7s] eval r1 0.12 done
+[   95.7s] eval r1 0.2 done
+[   98.4s] eval r1 0.3 done
+[   98.5s] wrote setting 7
+[   47.9s] cal const10 done
+[   76.0s] cal path done
+[   87.1s] val const10 done
+[   89.8s] val path done
+[   92.6s] val const05 done
+[   95.8s] eval r1 0.12 done
+[   99.0s] eval r1 0.2 done
+[  102.7s] eval r1 0.3 done
+[  102.8s] wrote setting 8
+[   46.3s] cal const10 done
+[   74.2s] cal path done
+[   85.9s] val const10 done
+[   88.6s] val path done
+[   91.4s] val const05 done
+[   94.4s] eval r1 0.12 done
+[   97.5s] eval r1 0.2 done
+[  100.6s] eval r1 0.3 done
+[  100.7s] wrote setting 9
+[   56.0s] cal const10 done
+[   89.0s] cal path done
+[  101.9s] val const10 done
+[  105.1s] val path done
+[  108.1s] val const05 done
+[  111.6s] eval r1 0.12 done
+[  114.9s] eval r1 0.2 done
+[  119.0s] eval r1 0.3 done
+[  119.1s] wrote setting 10
+[   52.3s] cal const10 done
+[   85.3s] cal path done
+[   97.4s] val const10 done
+[  100.8s] val path done
+[  103.9s] val const05 done
+[  107.1s] eval r1 0.12 done
+[  110.1s] eval r1 0.2 done
+[  113.0s] eval r1 0.3 done
+[  113.1s] wrote setting 11
+[   55.1s] cal const10 done
+[   90.5s] cal path done
+[  102.9s] val const10 done
+[  106.4s] val path done
+[  109.9s] val const05 done
+[  113.3s] eval r1 0.12 done
+[  116.6s] eval r1 0.2 done
+[  119.8s] eval r1 0.3 done
+[  119.9s] wrote setting 12
+[   55.0s] cal const10 done
+[   89.8s] cal path done
+[  101.6s] val const10 done
+[  105.1s] val path done
+[  108.5s] val const05 done
+[  111.8s] eval r1 0.12 done
+[  115.1s] eval r1 0.2 done
+[  119.0s] eval r1 0.3 done
+[  119.1s] wrote setting 13
+[   58.2s] cal const10 done
+[   98.5s] cal path done
+[  110.8s] val const10 done
+[  114.8s] val path done
+[  118.7s] val const05 done
+[  122.5s] eval r1 0.12 done
+[  126.0s] eval r1 0.2 done
+[  129.2s] eval r1 0.3 done
+[  129.3s] wrote setting 14
+[   57.2s] cal const10 done
+[   97.0s] cal path done
+[  110.0s] val const10 done
+[  114.0s] val path done
+[  117.9s] val const05 done
+[  121.9s] eval r1 0.12 done
+[  125.6s] eval r1 0.2 done
+[  128.9s] eval r1 0.3 done
+[  129.0s] wrote setting 15
+[   64.5s] cal const10 done
+[  108.6s] cal path done
+[  123.0s] val const10 done
+[  127.4s] val path done
+[  131.5s] val const05 done
+[  136.5s] eval r1 0.12 done
+[  140.8s] eval r1 0.2 done
+[  144.5s] eval r1 0.3 done
+[  144.6s] wrote setting 16
+[   65.0s] cal const10 done
+[  111.7s] cal path done
+[  126.4s] val const10 done
+[  131.1s] val path done
+[  136.2s] val const05 done
+[  141.0s] eval r1 0.12 done
+[  147.4s] eval r1 0.2 done
+[  151.2s] eval r1 0.3 done
+[  151.3s] wrote setting 17
+[   80.0s] cal const10 done
+[  140.1s] cal path done
+[  156.3s] val const10 done
+[  161.7s] val path done
+[  166.7s] val const05 done
+[  172.7s] eval r1 0.12 done
+[  177.3s] eval r1 0.2 done
+[  181.2s] eval r1 0.3 done
+[  181.4s] wrote setting 18
+[   78.6s] cal const10 done
+[  133.7s] cal path done
+[  149.7s] val const10 done
+[  155.2s] val path done
+[  160.3s] val const05 done
+[  166.5s] eval r1 0.12 done
+[  171.1s] eval r1 0.2 done
+[  175.1s] eval r1 0.3 done
+[  175.2s] wrote setting 19
+[  105.3s] cal const10 done
+[  187.3s] cal path done
+[  207.2s] val const10 done
+[  215.2s] val path done
+[  222.4s] val const05 done
+[  230.6s] eval r1 0.12 done
+[  235.6s] eval r1 0.2 done
+[  239.9s] eval r1 0.3 done
+[  240.0s] wrote setting 20
+[  104.7s] cal const10 done
+[  184.7s] cal path done
+[  205.0s] val const10 done
+[  212.9s] val path done
+[  220.1s] val const05 done
+[  228.2s] eval r1 0.12 done
+[  233.1s] eval r1 0.2 done
+[  237.4s] eval r1 0.3 done
+[  237.6s] wrote setting 21
+[  170.5s] cal const10 done
+[  311.0s] cal path done
+[  339.3s] val const10 done
+[  353.6s] val path done
+[  366.0s] val const05 done
+[  380.7s] eval r1 0.12 done
+[  387.9s] eval r1 0.2 done
+[  394.1s] eval r1 0.3 done
+[  394.3s] wrote setting 22
+[  160.1s] cal const10 done
+[  299.4s] cal path done
+[  328.4s] val const10 done
+[  342.6s] val path done
+[  355.5s] val const05 done
+[  382.6s] eval r1 0.12 done
+[  389.7s] eval r1 0.2 done
+[  396.1s] eval r1 0.3 done
+[  396.3s] wrote setting 23
+[   86.7s] fineq100k 0 cal done
+[   97.0s] fineq100k 0 val done
+[  100.4s] fineq100k 0 eval 0.2 done
+[  100.4s] fineq100k 0 wrote fineq_00_q0.11_d0
+[   82.3s] fineq100k 1 cal done
+[   92.1s] fineq100k 1 val done
+[   95.9s] fineq100k 1 eval 0.2 done
+[   96.0s] fineq100k 1 wrote fineq_01_q0.13_d0
+[   94.8s] fineq100k 2 cal done
+[  105.4s] fineq100k 2 val done
+[  109.1s] fineq100k 2 eval 0.2 done
+[  109.1s] fineq100k 2 wrote fineq_02_q0.15_d0
+[   95.1s] fineq100k 3 cal done
+[  105.4s] fineq100k 3 val done
+[  109.4s] fineq100k 3 eval 0.2 done
+[  109.5s] fineq100k 3 wrote fineq_03_q0.17_d0
+[   98.2s] fineq100k 4 cal done
+[  109.5s] fineq100k 4 val done
+[  113.2s] fineq100k 4 eval 0.2 done
+[  113.3s] fineq100k 4 wrote fineq_04_q0.19_d0
+[   83.1s] fineq100k 5 cal done
+[   93.5s] fineq100k 5 val done
+[   97.5s] fineq100k 5 eval 0.2 done
+[   97.5s] fineq100k 5 wrote fineq_05_q0.21_d0
+[  103.2s] fineq100k 6 cal done
+[  116.4s] fineq100k 6 val done
+[  120.8s] fineq100k 6 eval 0.2 done
+[  120.9s] fineq100k 6 wrote fineq_06_q0.23_d0
+[   99.8s] fineq100k 7 cal done
+[  111.3s] fineq100k 7 val done
+[  115.7s] fineq100k 7 eval 0.2 done
+[  115.7s] fineq100k 7 wrote fineq_07_q0.25_d0
+[   99.8s] fineq100k 8 cal done
+[  111.7s] fineq100k 8 val done
+[  116.2s] fineq100k 8 eval 0.2 done
+[  116.2s] fineq100k 8 wrote fineq_08_q0.27_d0
+[   77.2s] fineq100k 9 cal done
+[   86.2s] fineq100k 9 val done
+[   89.8s] fineq100k 9 eval 0.2 done
+[   89.8s] fineq100k 9 wrote fineq_09_q0.11_d500
+[   85.2s] fineq100k 10 cal done
+[   95.5s] fineq100k 10 val done
+[   99.0s] fineq100k 10 eval 0.2 done
+[   99.0s] fineq100k 10 wrote fineq_10_q0.13_d500
+[   82.6s] fineq100k 11 cal done
+[   92.4s] fineq100k 11 val done
+[   96.3s] fineq100k 11 eval 0.2 done
+[   96.3s] fineq100k 11 wrote fineq_11_q0.15_d500
+[   87.2s] fineq100k 12 cal done
+[   97.8s] fineq100k 12 val done
+[  101.4s] fineq100k 12 eval 0.2 done
+[  101.4s] fineq100k 12 wrote fineq_12_q0.17_d500
+[   85.3s] fineq100k 13 cal done
+[   95.9s] fineq100k 13 val done
+[   99.9s] fineq100k 13 eval 0.2 done
+[   99.9s] fineq100k 13 wrote fineq_13_q0.19_d500
+[   87.5s] fineq100k 14 cal done
+[   98.2s] fineq100k 14 val done
+[  102.2s] fineq100k 14 eval 0.2 done
+[  102.3s] fineq100k 14 wrote fineq_14_q0.21_d500
+[   91.0s] fineq100k 15 cal done
+[  101.5s] fineq100k 15 val done
+[  105.5s] fineq100k 15 eval 0.2 done
+[  105.5s] fineq100k 15 wrote fineq_15_q0.23_d500
+[   87.0s] fineq100k 16 cal done
+[   98.1s] fineq100k 16 val done
+[  102.3s] fineq100k 16 eval 0.2 done
+[  102.4s] fineq100k 16 wrote fineq_16_q0.25_d500
+[   98.1s] fineq100k 17 cal done
+[  110.0s] fineq100k 17 val done
+[  114.4s] fineq100k 17 eval 0.2 done
+[  114.4s] fineq100k 17 wrote fineq_17_q0.27_d500
+ALLDONE

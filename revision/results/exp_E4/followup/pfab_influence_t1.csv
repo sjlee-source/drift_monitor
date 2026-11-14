@@ -1,0 +1,274 @@
+analysis,target,q,d,audit,calibration,monitor,P_stable,P_excursion,P_by_end_1026,P_none
+without board 35957,0.05,0.1,0,item,iid,cusum_2x,0.0,0.0065,0.0875,0.9125
+without board 35957,0.05,0.1,0,item,iid,cusum_4x,0.0,0.0655,0.2635,0.7365
+without board 35957,0.05,0.1,0,item,iid,betting,0.0,0.002,0.0445,0.9555
+without board 35957,0.05,0.1,0,item,iid,msr,0.0,0.0815,0.2485,0.7515
+without board 35957,0.05,0.1,0,item,iid,esr,0.0,0.138,0.305,0.695
+without board 35957,0.05,0.1,0,item,iid,ewma,0.0,0.04,0.18,0.82
+without board 35957,0.05,0.1,0,item,iid,winbin,0.0,0.0,0.0005,0.9995
+without board 35957,0.05,0.1,0,board,iid,cusum_2x,0.0,0.0175,0.2295,0.7705
+without board 35957,0.05,0.1,0,board,iid,cusum_4x,0.0,0.104,0.3995,0.6005
+without board 35957,0.05,0.1,0,board,iid,betting,0.0,0.0065,0.218,0.782
+without board 35957,0.05,0.1,0,board,iid,msr,0.0,0.109,0.4045,0.5955
+without board 35957,0.05,0.1,0,board,iid,esr,0.0,0.1645,0.441,0.559
+without board 35957,0.05,0.1,0,board,iid,ewma,0.0,0.072,0.379,0.621
+without board 35957,0.05,0.1,0,board,iid,winbin,0.0,0.0,0.1355,0.8645
+without board 35957,0.05,0.1,0,board,board-unit ICC=0.1,cusum_2x,0.0,0.0,0.0,1.0
+without board 35957,0.05,0.1,0,board,board-unit ICC=0.1,cusum_4x,0.0,0.0,0.0,1.0
+without board 35957,0.05,0.1,0,board,board-unit ICC=0.1,betting,0.0,0.0,0.0,1.0
+without board 35957,0.05,0.1,0,board,board-unit ICC=0.1,msr,0.0,0.0,0.0055,0.9945
+without board 35957,0.05,0.1,0,board,board-unit ICC=0.1,esr,0.0,0.0,0.0055,0.9945
+without board 35957,0.05,0.1,0,board,board-unit ICC=0.1,ewma,0.0,0.0,0.103,0.897
+without board 35957,0.05,0.1,0,board,board-unit ICC=0.1,winbin,0.0,0.0,0.0,1.0
+without board 35957,0.05,0.1,3000,item,iid,cusum_2x,0.0,0.0045,0.0685,0.901
+without board 35957,0.05,0.1,3000,item,iid,cusum_4x,0.0,0.0515,0.2455,0.721
+without board 35957,0.05,0.1,3000,item,iid,betting,0.0,0.0025,0.035,0.945
+without board 35957,0.05,0.1,3000,item,iid,msr,0.0,0.085,0.26,0.716
+without board 35957,0.05,0.1,3000,item,iid,esr,0.0,0.142,0.3225,0.6605
+without board 35957,0.05,0.1,3000,item,iid,ewma,0.0,0.0405,0.198,0.781
+without board 35957,0.05,0.1,3000,item,iid,winbin,0.0,0.0,0.001,0.999
+without board 35957,0.05,0.1,3000,board,iid,cusum_2x,0.0,0.016,0.222,0.7615
+without board 35957,0.05,0.1,3000,board,iid,cusum_4x,0.0,0.097,0.347,0.592
+without board 35957,0.05,0.1,3000,board,iid,betting,0.0,0.0055,0.2115,0.7715
+without board 35957,0.05,0.1,3000,board,iid,msr,0.0,0.1055,0.3555,0.5835
+without board 35957,0.05,0.1,3000,board,iid,esr,0.0,0.1575,0.3945,0.548
+without board 35957,0.05,0.1,3000,board,iid,ewma,0.0,0.0615,0.3235,0.6135
+without board 35957,0.05,0.1,3000,board,iid,winbin,0.0,0.0005,0.1265,0.8655
+without board 35957,0.05,0.1,3000,board,board-unit ICC=0.1,cusum_2x,0.0,0.0,0.0,0.9975
+without board 35957,0.05,0.1,3000,board,board-unit ICC=0.1,cusum_4x,0.0,0.0,0.0,0.9975
+without board 35957,0.05,0.1,3000,board,board-unit ICC=0.1,betting,0.0,0.0,0.0,1.0
+without board 35957,0.05,0.1,3000,board,board-unit ICC=0.1,msr,0.0,0.0,0.0,0.9975
+without board 35957,0.05,0.1,3000,board,board-unit ICC=0.1,esr,0.0,0.0,0.0,0.9975
+without board 35957,0.05,0.1,3000,board,board-unit ICC=0.1,ewma,0.0,0.0,0.102,0.898
+without board 35957,0.05,0.1,3000,board,board-unit ICC=0.1,winbin,0.0,0.0,0.0,0.9975
+without board 35957,0.05,0.2,0,item,iid,cusum_2x,0.0,0.0505,0.411,0.589
+without board 35957,0.05,0.2,0,item,iid,cusum_4x,0.0,0.29,0.7105,0.2895
+without board 35957,0.05,0.2,0,item,iid,betting,0.0,0.0255,0.4245,0.5755
+without board 35957,0.05,0.2,0,item,iid,msr,0.0,0.336,0.681,0.319
+without board 35957,0.05,0.2,0,item,iid,esr,0.0,0.3945,0.7275,0.2725
+without board 35957,0.05,0.2,0,item,iid,ewma,0.0,0.2415,0.601,0.399
+without board 35957,0.05,0.2,0,item,iid,winbin,0.0,0.0,0.0035,0.9965
+without board 35957,0.05,0.2,0,board,iid,cusum_2x,0.0,0.1055,0.4775,0.5225
+without board 35957,0.05,0.2,0,board,iid,cusum_4x,0.0,0.3525,0.6965,0.3035
+without board 35957,0.05,0.2,0,board,iid,betting,0.0,0.072,0.4665,0.5335
+without board 35957,0.05,0.2,0,board,iid,msr,0.0,0.3945,0.751,0.249
+without board 35957,0.05,0.2,0,board,iid,esr,0.0,0.4635,0.7795,0.2205
+without board 35957,0.05,0.2,0,board,iid,ewma,0.0,0.311,0.72,0.28
+without board 35957,0.05,0.2,0,board,iid,winbin,0.0,0.0005,0.267,0.733
+without board 35957,0.05,0.2,0,board,board-unit ICC=0.1,cusum_2x,0.0,0.0,0.0,1.0
+without board 35957,0.05,0.2,0,board,board-unit ICC=0.1,cusum_4x,0.0,0.0,0.0,1.0
+without board 35957,0.05,0.2,0,board,board-unit ICC=0.1,betting,0.0,0.0,0.0,1.0
+without board 35957,0.05,0.2,0,board,board-unit ICC=0.1,msr,0.0,0.0,0.0,1.0
+without board 35957,0.05,0.2,0,board,board-unit ICC=0.1,esr,0.0,0.0,0.0,1.0
+without board 35957,0.05,0.2,0,board,board-unit ICC=0.1,ewma,0.0,0.0,0.199,0.801
+without board 35957,0.05,0.2,0,board,board-unit ICC=0.1,winbin,0.0,0.0,0.0,1.0
+without board 35957,0.05,0.2,3000,item,iid,cusum_2x,0.0,0.0485,0.303,0.6095
+without board 35957,0.05,0.2,3000,item,iid,cusum_4x,0.0,0.2875,0.6475,0.3115
+without board 35957,0.05,0.2,3000,item,iid,betting,0.0,0.028,0.326,0.5895
+without board 35957,0.05,0.2,3000,item,iid,msr,0.0,0.313,0.6205,0.351
+without board 35957,0.05,0.2,3000,item,iid,esr,0.0,0.3715,0.667,0.31
+without board 35957,0.05,0.2,3000,item,iid,ewma,0.0,0.227,0.543,0.436
+without board 35957,0.05,0.2,3000,item,iid,winbin,0.0,0.0,0.0015,0.996
+without board 35957,0.05,0.2,3000,board,iid,cusum_2x,0.0,0.095,0.4385,0.523
+without board 35957,0.05,0.2,3000,board,iid,cusum_4x,0.0,0.3275,0.6625,0.318
+without board 35957,0.05,0.2,3000,board,iid,betting,0.0,0.0635,0.4325,0.533
+without board 35957,0.05,0.2,3000,board,iid,msr,0.0,0.36,0.678,0.268
+without board 35957,0.05,0.2,3000,board,iid,esr,0.0,0.436,0.713,0.2375
+without board 35957,0.05,0.2,3000,board,iid,ewma,0.0,0.2825,0.638,0.297
+without board 35957,0.05,0.2,3000,board,iid,winbin,0.0,0.0005,0.247,0.7305
+without board 35957,0.05,0.2,3000,board,board-unit ICC=0.1,cusum_2x,0.0,0.0,0.0,1.0
+without board 35957,0.05,0.2,3000,board,board-unit ICC=0.1,cusum_4x,0.0,0.0,0.0,1.0
+without board 35957,0.05,0.2,3000,board,board-unit ICC=0.1,betting,0.0,0.0,0.0,1.0
+without board 35957,0.05,0.2,3000,board,board-unit ICC=0.1,msr,0.0,0.0,0.0,1.0
+without board 35957,0.05,0.2,3000,board,board-unit ICC=0.1,esr,0.0,0.0,0.0,1.0
+without board 35957,0.05,0.2,3000,board,board-unit ICC=0.1,ewma,0.0,0.0,0.2045,0.7955
+without board 35957,0.05,0.2,3000,board,board-unit ICC=0.1,winbin,0.0,0.0,0.0,1.0
+without board 35957,0.05,0.5,0,item,iid,cusum_2x,0.0,0.6815,0.996,0.004
+without board 35957,0.05,0.5,0,item,iid,cusum_4x,0.0,0.948,1.0,0.0
+without board 35957,0.05,0.5,0,item,iid,betting,0.0,0.668,0.993,0.007
+without board 35957,0.05,0.5,0,item,iid,msr,0.0,0.943,1.0,0.0
+without board 35957,0.05,0.5,0,item,iid,esr,0.0,0.9495,1.0,0.0
+without board 35957,0.05,0.5,0,item,iid,ewma,0.0,0.9295,0.999,0.001
+without board 35957,0.05,0.5,0,item,iid,winbin,0.0,0.0035,0.9585,0.0415
+without board 35957,0.05,0.5,0,board,iid,cusum_2x,0.0,0.6475,0.921,0.079
+without board 35957,0.05,0.5,0,board,iid,cusum_4x,0.0,0.922,0.9885,0.0115
+without board 35957,0.05,0.5,0,board,iid,betting,0.0,0.6345,0.934,0.066
+without board 35957,0.05,0.5,0,board,iid,msr,0.0,0.943,0.9885,0.0115
+without board 35957,0.05,0.5,0,board,iid,esr,0.0,0.9605,0.997,0.003
+without board 35957,0.05,0.5,0,board,iid,ewma,0.0,0.935,0.995,0.005
+without board 35957,0.05,0.5,0,board,iid,winbin,0.0,0.0295,0.688,0.312
+without board 35957,0.05,0.5,0,board,board-unit ICC=0.1,cusum_2x,0.0,0.0,0.0,1.0
+without board 35957,0.05,0.5,0,board,board-unit ICC=0.1,cusum_4x,0.0,0.0,0.0,1.0
+without board 35957,0.05,0.5,0,board,board-unit ICC=0.1,betting,0.0,0.0,0.0,1.0
+without board 35957,0.05,0.5,0,board,board-unit ICC=0.1,msr,0.0,0.0,0.0,1.0
+without board 35957,0.05,0.5,0,board,board-unit ICC=0.1,esr,0.0,0.0,0.0,1.0
+without board 35957,0.05,0.5,0,board,board-unit ICC=0.1,ewma,0.0,0.0,0.0,1.0
+without board 35957,0.05,0.5,0,board,board-unit ICC=0.1,winbin,0.0,0.0,0.0,1.0
+without board 35957,0.05,0.5,3000,item,iid,cusum_2x,0.0,0.6775,0.9925,0.0035
+without board 35957,0.05,0.5,3000,item,iid,cusum_4x,0.0,0.952,1.0,0.0
+without board 35957,0.05,0.5,3000,item,iid,betting,0.0,0.6535,0.992,0.004
+without board 35957,0.05,0.5,3000,item,iid,msr,0.0,0.9425,0.9995,0.0
+without board 35957,0.05,0.5,3000,item,iid,esr,0.0,0.952,0.9995,0.0
+without board 35957,0.05,0.5,3000,item,iid,ewma,0.0,0.928,0.998,0.0015
+without board 35957,0.05,0.5,3000,item,iid,winbin,0.0,0.0075,0.853,0.04
+without board 35957,0.05,0.5,3000,board,iid,cusum_2x,0.0,0.659,0.9095,0.072
+without board 35957,0.05,0.5,3000,board,iid,cusum_4x,0.0,0.9385,0.9895,0.007
+without board 35957,0.05,0.5,3000,board,iid,betting,0.0,0.636,0.92,0.0555
+without board 35957,0.05,0.5,3000,board,iid,msr,0.0,0.9455,0.991,0.0055
+without board 35957,0.05,0.5,3000,board,iid,esr,0.0,0.9575,0.9955,0.002
+without board 35957,0.05,0.5,3000,board,iid,ewma,0.0,0.934,0.9935,0.0035
+without board 35957,0.05,0.5,3000,board,iid,winbin,0.0,0.035,0.6315,0.319
+without board 35957,0.05,0.5,3000,board,board-unit ICC=0.1,cusum_2x,0.0,0.0,0.0,1.0
+without board 35957,0.05,0.5,3000,board,board-unit ICC=0.1,cusum_4x,0.0,0.0,0.0,1.0
+without board 35957,0.05,0.5,3000,board,board-unit ICC=0.1,betting,0.0,0.0,0.0,1.0
+without board 35957,0.05,0.5,3000,board,board-unit ICC=0.1,msr,0.0,0.0,0.0,1.0
+without board 35957,0.05,0.5,3000,board,board-unit ICC=0.1,esr,0.0,0.0,0.0,1.0
+without board 35957,0.05,0.5,3000,board,board-unit ICC=0.1,ewma,0.0,0.0005,0.0005,0.9995
+without board 35957,0.05,0.5,3000,board,board-unit ICC=0.1,winbin,0.0,0.0,0.0,1.0
+without board 35957,0.05,1.0,0,item,iid,cusum_2x,0.0,1.0,1.0,0.0
+without board 35957,0.05,1.0,0,item,iid,cusum_4x,0.0,1.0,1.0,0.0
+without board 35957,0.05,1.0,0,item,iid,betting,0.0,1.0,1.0,0.0
+without board 35957,0.05,1.0,0,item,iid,msr,0.0,1.0,1.0,0.0
+without board 35957,0.05,1.0,0,item,iid,esr,0.0,1.0,1.0,0.0
+without board 35957,0.05,1.0,0,item,iid,ewma,0.0,1.0,1.0,0.0
+without board 35957,0.05,1.0,0,item,iid,winbin,0.0,1.0,1.0,0.0
+without board 35957,0.05,1.0,0,board,iid,cusum_2x,0.0,1.0,1.0,0.0
+without board 35957,0.05,1.0,0,board,iid,cusum_4x,0.0,1.0,1.0,0.0
+without board 35957,0.05,1.0,0,board,iid,betting,0.0,1.0,1.0,0.0
+without board 35957,0.05,1.0,0,board,iid,msr,0.0,1.0,1.0,0.0
+without board 35957,0.05,1.0,0,board,iid,esr,0.0,1.0,1.0,0.0
+without board 35957,0.05,1.0,0,board,iid,ewma,0.0,1.0,1.0,0.0
+without board 35957,0.05,1.0,0,board,iid,winbin,0.0,1.0,1.0,0.0
+without board 35957,0.05,1.0,0,board,board-unit ICC=0.1,cusum_2x,0.0,0.0,0.0,1.0
+without board 35957,0.05,1.0,0,board,board-unit ICC=0.1,cusum_4x,0.0,0.0,0.0,1.0
+without board 35957,0.05,1.0,0,board,board-unit ICC=0.1,betting,0.0,0.0,0.0,1.0
+without board 35957,0.05,1.0,0,board,board-unit ICC=0.1,msr,0.0,0.0,0.0,1.0
+without board 35957,0.05,1.0,0,board,board-unit ICC=0.1,esr,0.0,0.0,0.0,1.0
+without board 35957,0.05,1.0,0,board,board-unit ICC=0.1,ewma,0.0,0.0,0.0,1.0
+without board 35957,0.05,1.0,0,board,board-unit ICC=0.1,winbin,0.0,0.0,0.0,1.0
+without board 35957,0.05,1.0,3000,item,iid,cusum_2x,0.0,1.0,1.0,0.0
+without board 35957,0.05,1.0,3000,item,iid,cusum_4x,0.0,1.0,1.0,0.0
+without board 35957,0.05,1.0,3000,item,iid,betting,0.0,1.0,1.0,0.0
+without board 35957,0.05,1.0,3000,item,iid,msr,0.0,1.0,1.0,0.0
+without board 35957,0.05,1.0,3000,item,iid,esr,0.0,1.0,1.0,0.0
+without board 35957,0.05,1.0,3000,item,iid,ewma,0.0,1.0,1.0,0.0
+without board 35957,0.05,1.0,3000,item,iid,winbin,0.0,1.0,1.0,0.0
+without board 35957,0.05,1.0,3000,board,iid,cusum_2x,0.0,1.0,1.0,0.0
+without board 35957,0.05,1.0,3000,board,iid,cusum_4x,0.0,1.0,1.0,0.0
+without board 35957,0.05,1.0,3000,board,iid,betting,0.0,1.0,1.0,0.0
+without board 35957,0.05,1.0,3000,board,iid,msr,0.0,1.0,1.0,0.0
+without board 35957,0.05,1.0,3000,board,iid,esr,0.0,1.0,1.0,0.0
+without board 35957,0.05,1.0,3000,board,iid,ewma,0.0,1.0,1.0,0.0
+without board 35957,0.05,1.0,3000,board,iid,winbin,0.0,1.0,1.0,0.0
+without board 35957,0.05,1.0,3000,board,board-unit ICC=0.1,cusum_2x,0.0,0.0,0.0,1.0
+without board 35957,0.05,1.0,3000,board,board-unit ICC=0.1,cusum_4x,0.0,0.0,0.0,1.0
+without board 35957,0.05,1.0,3000,board,board-unit ICC=0.1,betting,0.0,0.0,0.0,1.0
+without board 35957,0.05,1.0,3000,board,board-unit ICC=0.1,msr,0.0,0.0,0.0,1.0
+without board 35957,0.05,1.0,3000,board,board-unit ICC=0.1,esr,0.0,0.0,0.0,1.0
+without board 35957,0.05,1.0,3000,board,board-unit ICC=0.1,ewma,0.0,0.0,0.0,1.0
+without board 35957,0.05,1.0,3000,board,board-unit ICC=0.1,winbin,0.0,0.0,0.0,1.0
+LOBO rank1 board 35957 (misses 26/35),0.05,0.2,0,item,iid,cusum_2x,0.0,0.049,0.44,0.56
+LOBO rank1 board 35957 (misses 26/35),0.05,0.2,0,item,iid,cusum_4x,0.0,0.295,0.7145,0.2855
+LOBO rank1 board 35957 (misses 26/35),0.05,0.2,0,item,iid,betting,0.0,0.022,0.449,0.551
+LOBO rank1 board 35957 (misses 26/35),0.05,0.2,0,item,iid,msr,0.0,0.33,0.689,0.311
+LOBO rank1 board 35957 (misses 26/35),0.05,0.2,0,item,iid,esr,0.0,0.39,0.7275,0.2725
+LOBO rank1 board 35957 (misses 26/35),0.05,0.2,0,item,iid,ewma,0.0,0.233,0.6075,0.3925
+LOBO rank1 board 35957 (misses 26/35),0.05,0.2,0,item,iid,winbin,0.0,0.0,0.009,0.991
+LOBO rank1 board 35957 (misses 26/35),0.05,0.5,0,item,iid,cusum_2x,0.0,0.6785,0.998,0.002
+LOBO rank1 board 35957 (misses 26/35),0.05,0.5,0,item,iid,cusum_4x,0.0,0.941,1.0,0.0
+LOBO rank1 board 35957 (misses 26/35),0.05,0.5,0,item,iid,betting,0.0,0.668,0.9945,0.0055
+LOBO rank1 board 35957 (misses 26/35),0.05,0.5,0,item,iid,msr,0.0,0.939,0.9995,0.0005
+LOBO rank1 board 35957 (misses 26/35),0.05,0.5,0,item,iid,esr,0.0,0.9475,0.9995,0.0005
+LOBO rank1 board 35957 (misses 26/35),0.05,0.5,0,item,iid,ewma,0.0,0.9185,0.9965,0.0035
+LOBO rank1 board 35957 (misses 26/35),0.05,0.5,0,item,iid,winbin,0.0,0.0065,0.964,0.036
+LOBO rank1 board 35957 (misses 26/35),0.05,0.2,0,board,iid,cusum_2x,0.0,0.084,0.4545,0.5455
+LOBO rank1 board 35957 (misses 26/35),0.05,0.2,0,board,iid,cusum_4x,0.0,0.3245,0.6825,0.3175
+LOBO rank1 board 35957 (misses 26/35),0.05,0.2,0,board,iid,betting,0.0,0.0535,0.4565,0.5435
+LOBO rank1 board 35957 (misses 26/35),0.05,0.2,0,board,iid,msr,0.0,0.3625,0.732,0.268
+LOBO rank1 board 35957 (misses 26/35),0.05,0.2,0,board,iid,esr,0.0,0.435,0.7625,0.2375
+LOBO rank1 board 35957 (misses 26/35),0.05,0.2,0,board,iid,ewma,0.0,0.2795,0.695,0.305
+LOBO rank1 board 35957 (misses 26/35),0.05,0.2,0,board,iid,winbin,0.0,0.0,0.27,0.73
+LOBO rank2 board 38996 (misses 25/271),0.05,0.2,0,item,iid,cusum_2x,0.0,0.6735,0.693,0.307
+LOBO rank2 board 38996 (misses 25/271),0.05,0.2,0,item,iid,cusum_4x,0.0,0.911,0.9295,0.0705
+LOBO rank2 board 38996 (misses 25/271),0.05,0.2,0,item,iid,betting,0.0,0.6095,0.6425,0.3575
+LOBO rank2 board 38996 (misses 25/271),0.05,0.2,0,item,iid,msr,0.0,0.9105,0.925,0.075
+LOBO rank2 board 38996 (misses 25/271),0.05,0.2,0,item,iid,esr,0.0,0.917,0.9295,0.0705
+LOBO rank2 board 38996 (misses 25/271),0.05,0.2,0,item,iid,ewma,0.0,0.9015,0.915,0.085
+LOBO rank2 board 38996 (misses 25/271),0.05,0.2,0,item,iid,winbin,0.0,0.0125,0.0165,0.9835
+LOBO rank2 board 38996 (misses 25/271),0.05,0.5,0,item,iid,cusum_2x,0.0,0.9995,1.0,0.0
+LOBO rank2 board 38996 (misses 25/271),0.05,0.5,0,item,iid,cusum_4x,0.0,1.0,1.0,0.0
+LOBO rank2 board 38996 (misses 25/271),0.05,0.5,0,item,iid,betting,0.0,1.0,1.0,0.0
+LOBO rank2 board 38996 (misses 25/271),0.05,0.5,0,item,iid,msr,0.0,1.0,1.0,0.0
+LOBO rank2 board 38996 (misses 25/271),0.05,0.5,0,item,iid,esr,0.0,1.0,1.0,0.0
+LOBO rank2 board 38996 (misses 25/271),0.05,0.5,0,item,iid,ewma,0.0,1.0,1.0,0.0
+LOBO rank2 board 38996 (misses 25/271),0.05,0.5,0,item,iid,winbin,0.0,0.952,0.969,0.031
+LOBO rank2 board 38996 (misses 25/271),0.05,0.2,0,board,iid,cusum_2x,0.0,0.2635,0.4425,0.5575
+LOBO rank2 board 38996 (misses 25/271),0.05,0.2,0,board,iid,cusum_4x,0.0,0.451,0.6735,0.3265
+LOBO rank2 board 38996 (misses 25/271),0.05,0.2,0,board,iid,betting,0.0,0.243,0.4365,0.5635
+LOBO rank2 board 38996 (misses 25/271),0.05,0.2,0,board,iid,msr,0.0,0.482,0.737,0.263
+LOBO rank2 board 38996 (misses 25/271),0.05,0.2,0,board,iid,esr,0.0,0.547,0.772,0.228
+LOBO rank2 board 38996 (misses 25/271),0.05,0.2,0,board,iid,ewma,0.0,0.4155,0.7055,0.2945
+LOBO rank2 board 38996 (misses 25/271),0.05,0.2,0,board,iid,winbin,0.0,0.1855,0.25,0.75
+LOBO rank3 board 38997 (misses 15/104),0.05,0.2,0,item,iid,cusum_2x,0.0,0.686,0.7305,0.2695
+LOBO rank3 board 38997 (misses 15/104),0.05,0.2,0,item,iid,cusum_4x,0.0,0.9145,0.9475,0.0525
+LOBO rank3 board 38997 (misses 15/104),0.05,0.2,0,item,iid,betting,0.0,0.622,0.6985,0.3015
+LOBO rank3 board 38997 (misses 15/104),0.05,0.2,0,item,iid,msr,0.0,0.9205,0.9535,0.0465
+LOBO rank3 board 38997 (misses 15/104),0.05,0.2,0,item,iid,esr,0.0,0.9265,0.963,0.037
+LOBO rank3 board 38997 (misses 15/104),0.05,0.2,0,item,iid,ewma,0.0,0.9075,0.9415,0.0585
+LOBO rank3 board 38997 (misses 15/104),0.05,0.2,0,item,iid,winbin,0.0,0.01,0.014,0.986
+LOBO rank3 board 38997 (misses 15/104),0.05,0.5,0,item,iid,cusum_2x,0.0,1.0,1.0,0.0
+LOBO rank3 board 38997 (misses 15/104),0.05,0.5,0,item,iid,cusum_4x,0.0,1.0,1.0,0.0
+LOBO rank3 board 38997 (misses 15/104),0.05,0.5,0,item,iid,betting,0.0,1.0,1.0,0.0
+LOBO rank3 board 38997 (misses 15/104),0.05,0.5,0,item,iid,msr,0.0,1.0,1.0,0.0
+LOBO rank3 board 38997 (misses 15/104),0.05,0.5,0,item,iid,esr,0.0,1.0,1.0,0.0
+LOBO rank3 board 38997 (misses 15/104),0.05,0.5,0,item,iid,ewma,0.0,1.0,1.0,0.0
+LOBO rank3 board 38997 (misses 15/104),0.05,0.5,0,item,iid,winbin,0.0,0.9395,0.9715,0.0285
+LOBO rank3 board 38997 (misses 15/104),0.05,0.2,0,board,iid,cusum_2x,0.0,0.282,0.462,0.538
+LOBO rank3 board 38997 (misses 15/104),0.05,0.2,0,board,iid,cusum_4x,0.0,0.46,0.6815,0.3185
+LOBO rank3 board 38997 (misses 15/104),0.05,0.2,0,board,iid,betting,0.0,0.2575,0.454,0.546
+LOBO rank3 board 38997 (misses 15/104),0.05,0.2,0,board,iid,msr,0.0,0.502,0.7355,0.2645
+LOBO rank3 board 38997 (misses 15/104),0.05,0.2,0,board,iid,esr,0.0,0.554,0.7635,0.2365
+LOBO rank3 board 38997 (misses 15/104),0.05,0.2,0,board,iid,ewma,0.0,0.4335,0.7065,0.2935
+LOBO rank3 board 38997 (misses 15/104),0.05,0.2,0,board,iid,winbin,0.0,0.1925,0.349,0.651
+LOBO rank4 board 38999 (misses 7/47),0.05,0.2,0,item,iid,cusum_2x,0.0,0.6945,0.788,0.212
+LOBO rank4 board 38999 (misses 7/47),0.05,0.2,0,item,iid,cusum_4x,0.0,0.9195,0.966,0.034
+LOBO rank4 board 38999 (misses 7/47),0.05,0.2,0,item,iid,betting,0.0,0.627,0.7705,0.2295
+LOBO rank4 board 38999 (misses 7/47),0.05,0.2,0,item,iid,msr,0.0,0.92,0.9585,0.0415
+LOBO rank4 board 38999 (misses 7/47),0.05,0.2,0,item,iid,esr,0.0,0.923,0.9635,0.0365
+LOBO rank4 board 38999 (misses 7/47),0.05,0.2,0,item,iid,ewma,0.0,0.9105,0.946,0.054
+LOBO rank4 board 38999 (misses 7/47),0.05,0.2,0,item,iid,winbin,0.0,0.0125,0.0185,0.9815
+LOBO rank4 board 38999 (misses 7/47),0.05,0.5,0,item,iid,cusum_2x,0.0,1.0,1.0,0.0
+LOBO rank4 board 38999 (misses 7/47),0.05,0.5,0,item,iid,cusum_4x,0.0,1.0,1.0,0.0
+LOBO rank4 board 38999 (misses 7/47),0.05,0.5,0,item,iid,betting,0.0,1.0,1.0,0.0
+LOBO rank4 board 38999 (misses 7/47),0.05,0.5,0,item,iid,msr,0.0,1.0,1.0,0.0
+LOBO rank4 board 38999 (misses 7/47),0.05,0.5,0,item,iid,esr,0.0,1.0,1.0,0.0
+LOBO rank4 board 38999 (misses 7/47),0.05,0.5,0,item,iid,ewma,0.0,1.0,1.0,0.0
+LOBO rank4 board 38999 (misses 7/47),0.05,0.5,0,item,iid,winbin,0.0,0.9505,0.9935,0.0065
+LOBO rank4 board 38999 (misses 7/47),0.05,0.2,0,board,iid,cusum_2x,0.0,0.2735,0.561,0.439
+LOBO rank4 board 38999 (misses 7/47),0.05,0.2,0,board,iid,cusum_4x,0.0,0.4675,0.708,0.292
+LOBO rank4 board 38999 (misses 7/47),0.05,0.2,0,board,iid,betting,0.0,0.2495,0.545,0.455
+LOBO rank4 board 38999 (misses 7/47),0.05,0.2,0,board,iid,msr,0.0,0.4945,0.7615,0.2385
+LOBO rank4 board 38999 (misses 7/47),0.05,0.2,0,board,iid,esr,0.0,0.5485,0.783,0.217
+LOBO rank4 board 38999 (misses 7/47),0.05,0.2,0,board,iid,ewma,0.0,0.4345,0.73,0.27
+LOBO rank4 board 38999 (misses 7/47),0.05,0.2,0,board,iid,winbin,0.0,0.2045,0.402,0.598
+LOBO rank5 board 39493 (misses 6/15),0.05,0.2,0,item,iid,cusum_2x,0.0,0.6685,0.777,0.223
+LOBO rank5 board 39493 (misses 6/15),0.05,0.2,0,item,iid,cusum_4x,0.0,0.916,0.9615,0.0385
+LOBO rank5 board 39493 (misses 6/15),0.05,0.2,0,item,iid,betting,0.0,0.608,0.7715,0.2285
+LOBO rank5 board 39493 (misses 6/15),0.05,0.2,0,item,iid,msr,0.0,0.915,0.9595,0.0405
+LOBO rank5 board 39493 (misses 6/15),0.05,0.2,0,item,iid,esr,0.0,0.921,0.9665,0.0335
+LOBO rank5 board 39493 (misses 6/15),0.05,0.2,0,item,iid,ewma,0.0,0.902,0.953,0.047
+LOBO rank5 board 39493 (misses 6/15),0.05,0.2,0,item,iid,winbin,0.0,0.014,0.0205,0.9795
+LOBO rank5 board 39493 (misses 6/15),0.05,0.5,0,item,iid,cusum_2x,0.0,1.0,1.0,0.0
+LOBO rank5 board 39493 (misses 6/15),0.05,0.5,0,item,iid,cusum_4x,0.0,1.0,1.0,0.0
+LOBO rank5 board 39493 (misses 6/15),0.05,0.5,0,item,iid,betting,0.0,1.0,1.0,0.0
+LOBO rank5 board 39493 (misses 6/15),0.05,0.5,0,item,iid,msr,0.0,1.0,1.0,0.0
+LOBO rank5 board 39493 (misses 6/15),0.05,0.5,0,item,iid,esr,0.0,1.0,1.0,0.0
+LOBO rank5 board 39493 (misses 6/15),0.05,0.5,0,item,iid,ewma,0.0,1.0,1.0,0.0
+LOBO rank5 board 39493 (misses 6/15),0.05,0.5,0,item,iid,winbin,0.0,0.937,0.9925,0.0075
+LOBO rank5 board 39493 (misses 6/15),0.05,0.2,0,board,iid,cusum_2x,0.0,0.2895,0.5565,0.4435
+LOBO rank5 board 39493 (misses 6/15),0.05,0.2,0,board,iid,cusum_4x,0.0,0.4595,0.731,0.269
+LOBO rank5 board 39493 (misses 6/15),0.05,0.2,0,board,iid,betting,0.0,0.265,0.5615,0.4385
+LOBO rank5 board 39493 (misses 6/15),0.05,0.2,0,board,iid,msr,0.0,0.4975,0.7545,0.2455
+LOBO rank5 board 39493 (misses 6/15),0.05,0.2,0,board,iid,esr,0.0,0.543,0.7785,0.2215
+LOBO rank5 board 39493 (misses 6/15),0.05,0.2,0,board,iid,ewma,0.0,0.4305,0.719,0.281
+LOBO rank5 board 39493 (misses 6/15),0.05,0.2,0,board,iid,winbin,0.0,0.207,0.4025,0.5975

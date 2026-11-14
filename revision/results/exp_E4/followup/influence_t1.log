@@ -1,0 +1,14 @@
+[influence t1 8s] drop35957 0.1 0
+[influence t1 12s] drop35957 0.1 3000
+[influence t1 15s] drop35957 0.2 0
+[influence t1 18s] drop35957 0.2 3000
+[influence t1 22s] drop35957 0.5 0
+[influence t1 26s] drop35957 0.5 3000
+[influence t1 30s] drop35957 1.0 0
+[influence t1 34s] drop35957 1.0 3000
+[influence t1 39s] lobo 35957
+[influence t1 45s] lobo 38996
+[influence t1 50s] lobo 38997
+[influence t1 56s] lobo 38999
+[influence t1 61s] lobo 39493
+[influence t1 61s] finished

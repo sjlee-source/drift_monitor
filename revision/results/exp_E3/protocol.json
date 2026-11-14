@@ -1,0 +1,1363 @@
+{
+ "experiment": "E3 adaptive / targeted audit allocation",
+ "experiment_id": 13,
+ "written": "2026-11-13 07:57:37.278879",
+ "status": "prespecified before calibration, validation and evaluation (only a 4000-stream pilot with role=pilot for timing/kernel check was run)",
+ "scope": "Outside Theorem 1: targeted policies make audit selection depend on the classifier score, which is informative about the miss indicator; Theorem 1 (oracle bound beta*) assumes noninformative audits. beta* at the uniform label rate is reported as the uniform-audit limit, not as a bound for targeted policies.",
+ "model": {
+  "H": 29999,
+  "tau": 10000,
+  "r0": 0.1,
+  "r_pre": 0.05,
+  "r1": 0.2,
+  "score": "binormal: S = Z*mu1_t + N(0,1); inspector passes iff S < c; miss M = Z*1[S<c]; mu1_t = c - Phi^-1(r_t) so P(M=1|Z=1)=r_t exactly",
+  "AUC_at_r0": 0.9,
+  "mu_ref": 1.8123876048736465,
+  "c": 0.5308360393290461,
+  "AUC_at_r": {
+   "r005": 0.938,
+   "r010": 0.9,
+   "r020": 0.833
+  },
+  "strata_edges": [
+   -1.469163960670954,
+   -0.4691639606709539,
+   0.030836039329046105,
+   0.5308360393290461,
+   1.530836039329046,
+   2.530836039329046
+  ],
+  "strata_note": "7 strata by np.searchsorted(edges, S); strata 0-3 passed (S<c), 4-6 flagged",
+  "defect_posterior": "u(S)=P(Z=1|S) under nominal (pi, r0) model; policies use the fixed nominal design (no adaptation of the score model)",
+  "delay": "constant d (both W-B review labels and audit labels)"
+ },
+ "conditions": {
+  "pi0.10_d500": {
+   "cond_id": 0,
+   "pi": 0.1,
+   "d": 500,
+   "label": "pi0.10_d500"
+  },
+  "pi0.10_d0": {
+   "cond_id": 1,
+   "pi": 0.1,
+   "d": 0,
+   "label": "pi0.10_d0"
+  },
+  "pi0.01_d500": {
+   "cond_id": 2,
+   "pi": 0.01,
+   "d": 500,
+   "label": "pi0.01_d500"
+  }
+ },
+ "seeds": {
+  "rng": "revision.rng.stream_states(role, 13, 10*cond+path, replicate)",
+  "paths": {
+   "null_const010": 0,
+   "null_path": 1,
+   "null_const005": 2,
+   "harm": 3
+  },
+  "crn": "all policies and both workflows share streams within (role, cond, path)"
+ },
+ "budget": {
+  "B": 6000,
+  "qbar": 0.2000066668888963,
+  "rule": "pathwise hard cap B; W-A: forced p=1 when remaining scope items <= remaining scope budget (exact spending); W-B: pacing only (no forcing possible on passed items), audits used reported",
+  "block": {
+   "size": 3000,
+   "block_budget": "round(B*end/H)-round(B*start/H)"
+  },
+  "floor": 0.02,
+  "floor_rule": "paced targeted policies: p=clip(g(S)*kappa, eps, 1), kappa=(Brem/items_rem)/qbar; p=0 only when the (scope) budget is exhausted (counted as floor violations); P1/P2 exact-uniform p=Brem/items_rem; P3 original mechanics (base/boost, p=0 when exhausted, forced at end)"
+ },
+ "workflows": {
+  "WA": "any item auditable; audited defective -> label X=M",
+  "WB": "flagged items (S>=c) always reviewed free (caught-defect labels X=0, weight 1, not charged); audits only on passed items; audited passed defective -> miss label X=1, weight 1/p_t"
+ },
+ "estimand": "r_t = P(M_t=1 | Z_t=1) = misses/(misses+caught defects) (both workflows); W-B HT ratio sum(w X)/sum(w) over defect labels",
+ "monitors": {
+  "primary": "mixture SR (original stakes LAM=[.02,.05,.10,.20,.40]/.09, log mean of 5 SR components)",
+  "secondary": "Betting (gain 4, cap 9, window 50, Hajek-weighted window mean)",
+  "increment": "D = wt*(X - r0); W-A P1-P3 wt=1 (selection independent of current item given past: plain original monitors); W-A P4-P6 wt=qbar/p_t (IPW, normalized so uniform -> 1); W-B wt=1 caught, 1/p_t miss",
+  "clipping": "no weight clipping beyond the floor eps (wt <= qbar/eps = 10 in W-A, 1/eps = 50 in W-B); stakes capped at capf/(r0*b_t), capf=0.99 (mSR), 0.9 (Betting: cap 9 * r0), b_t = F_{t-1}-measurable bound on the weight of any possible negative-increment label of item t (W-A IPW: qbar/clip(kappa_t*min_{s>=c} g(s), eps, 1); W-A P1-P3 and W-B: 1)",
+  "validity": "item-level increments have E[D_t|F_{t-1}] = const*pi*(r_t - r0) <= 0 under every admissible path, stakes are predictable (constant delay => arrival order = origin order), every factor >= 0.01: Betting log-wealth is a nonnegative supermartingale (Ville: native threshold log(1/0.02) bounds FA over any horizon by 0.02); mixture SR is an e-SR (ARL guarantee). Thresholds actually used are empirically calibrated (two-point null). Native Betting FA reported as a theory check."
+ },
+ "policies_WA": {
+  "P1": "horizon-uniform",
+  "P2": "block-uniform (3000)",
+  "P3": "warning-boost (original): desired q=base (0.05/0.20), 0.5 while mSR stat >= threshold/4; horizon/block budgets (4 variants)",
+  "P4": "uncertainty: g = a*u(1-u)",
+  "P5": "score-stratified: g_h proportional to P(Z=1|stratum h)",
+  "P6": "Neyman: g_h proportional to sd of Z(M-r0) in stratum h, unit cost (cost-sensitive with equal costs = Neyman; no audit-cost data available). Deviation from brief: sd of the HT target Z(M-r0) used instead of sd of the label indicator Z, because Z(M-r0) is the quantity whose HT sum the monitor uses."
+ },
+ "policies_WB": {
+  "B1": "uniform over passed items (paced)",
+  "B2": "block-uniform over passed",
+  "B3": "block warning-boost over passed (base qbar/P(pass), boost 2.5x base)",
+  "B4": "uncertainty u(1-u) on passed",
+  "B5": "score-stratified P(Z|h) on passed strata",
+  "B6": "Neyman sqrt(p_h(1-p_h)) on passed strata"
+ },
+ "design_parameters": {
+  "wf0_cond0": {
+   "strata_info": {
+    "N": [
+     0.06385636408439212,
+     0.22479802703462975,
+     0.17615659383899337,
+     0.1771994334386526,
+     0.24028948670939043,
+     0.0889554571016673,
+     0.028744637792274434
+    ],
+    "pz": [
+     0.0008083583164265635,
+     0.004778389928353871,
+     0.014846608530225883,
+     0.03532110932036842,
+     0.12033139510387962,
+     0.4211274998366578,
+     0.8218590806442867
+    ],
+    "p_pass": 0.6420104183966678
+   },
+   "policies": {
+    "P1_horizon_uniform": {
+     "ptype": 0,
+     "scope_block": false,
+     "base": 0.0,
+     "boost": 0.0,
+     "warn": false,
+     "gtype": 0,
+     "G": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "a_unc": 0.0,
+     "gmin_flag": 1.0,
+     "ipw": 0
+    },
+    "P2_block_uniform": {
+     "ptype": 0,
+     "scope_block": true,
+     "base": 0.0,
+     "boost": 0.0,
+     "warn": false,
+     "gtype": 0,
+     "G": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "a_unc": 0.0,
+     "gmin_flag": 1.0,
+     "ipw": 0
+    },
+    "P3_horizon_warn_q05": {
+     "ptype": 1,
+     "scope_block": false,
+     "base": 0.05,
+     "boost": 0.5,
+     "warn": true,
+     "gtype": 0,
+     "G": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "a_unc": 0.0,
+     "gmin_flag": 1.0,
+     "ipw": 0
+    },
+    "P3_horizon_warn_q20": {
+     "ptype": 1,
+     "scope_block": false,
+     "base": 0.2,
+     "boost": 0.5,
+     "warn": true,
+     "gtype": 0,
+     "G": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "a_unc": 0.0,
+     "gmin_flag": 1.0,
+     "ipw": 0
+    },
+    "P3_block_warn_q05": {
+     "ptype": 1,
+     "scope_block": true,
+     "base": 0.05,
+     "boost": 0.5,
+     "warn": true,
+     "gtype": 0,
+     "G": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "a_unc": 0.0,
+     "gmin_flag": 1.0,
+     "ipw": 0
+    },
+    "P3_block_warn_q20": {
+     "ptype": 1,
+     "scope_block": true,
+     "base": 0.2,
+     "boost": 0.5,
+     "warn": true,
+     "gtype": 0,
+     "G": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "a_unc": 0.0,
+     "gmin_flag": 1.0,
+     "ipw": 0
+    },
+    "P4_uncertainty": {
+     "ptype": 2,
+     "scope_block": false,
+     "base": 0.0,
+     "boost": 0.0,
+     "warn": false,
+     "gtype": 2,
+     "G": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "a_unc": 3.3602894156038827,
+     "gmin_flag": 0.0,
+     "ipw": 1
+    },
+    "P5_score_stratified": {
+     "ptype": 2,
+     "scope_block": false,
+     "base": 0.0,
+     "boost": 0.0,
+     "warn": false,
+     "gtype": 1,
+     "G": [
+      0.0017777284404958767,
+      0.010508557285543117,
+      0.032650419613130775,
+      0.07767760820010974,
+      0.2646308437901086,
+      0.9261367370401287,
+      1.8074191012221414
+     ],
+     "a_unc": 0.0,
+     "gmin_flag": 0.2646308437901086,
+     "ipw": 1
+    },
+    "P6_neyman": {
+     "ptype": 2,
+     "scope_block": false,
+     "base": 0.0,
+     "boost": 0.0,
+     "warn": false,
+     "gtype": 1,
+     "G": [
+      0.06600421998855976,
+      0.16015704364023442,
+      0.2808735921533809,
+      0.42870041764233763,
+      0.08395602422977365,
+      0.12740929198261303,
+      0.09873778166356836
+     ],
+     "a_unc": 0.0,
+     "gmin_flag": 0.08395602422977365,
+     "ipw": 1
+    }
+   }
+  },
+  "wf0_cond1": {
+   "strata_info": {
+    "N": [
+     0.06385636408439212,
+     0.22479802703462975,
+     0.17615659383899337,
+     0.1771994334386526,
+     0.24028948670939043,
+     0.0889554571016673,
+     0.028744637792274434
+    ],
+    "pz": [
+     0.0008083583164265635,
+     0.004778389928353871,
+     0.014846608530225883,
+     0.03532110932036842,
+     0.12033139510387962,
+     0.4211274998366578,
+     0.8218590806442867
+    ],
+    "p_pass": 0.6420104183966678
+   },
+   "policies": {
+    "P1_horizon_uniform": {
+     "ptype": 0,
+     "scope_block": false,
+     "base": 0.0,
+     "boost": 0.0,
+     "warn": false,
+     "gtype": 0,
+     "G": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "a_unc": 0.0,
+     "gmin_flag": 1.0,
+     "ipw": 0
+    },
+    "P2_block_uniform": {
+     "ptype": 0,
+     "scope_block": true,
+     "base": 0.0,
+     "boost": 0.0,
+     "warn": false,
+     "gtype": 0,
+     "G": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "a_unc": 0.0,
+     "gmin_flag": 1.0,
+     "ipw": 0
+    },
+    "P3_horizon_warn_q05": {
+     "ptype": 1,
+     "scope_block": false,
+     "base": 0.05,
+     "boost": 0.5,
+     "warn": true,
+     "gtype": 0,
+     "G": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "a_unc": 0.0,
+     "gmin_flag": 1.0,
+     "ipw": 0
+    },
+    "P3_horizon_warn_q20": {
+     "ptype": 1,
+     "scope_block": false,
+     "base": 0.2,
+     "boost": 0.5,
+     "warn": true,
+     "gtype": 0,
+     "G": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "a_unc": 0.0,
+     "gmin_flag": 1.0,
+     "ipw": 0
+    },
+    "P3_block_warn_q05": {
+     "ptype": 1,
+     "scope_block": true,
+     "base": 0.05,
+     "boost": 0.5,
+     "warn": true,
+     "gtype": 0,
+     "G": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "a_unc": 0.0,
+     "gmin_flag": 1.0,
+     "ipw": 0
+    },
+    "P3_block_warn_q20": {
+     "ptype": 1,
+     "scope_block": true,
+     "base": 0.2,
+     "boost": 0.5,
+     "warn": true,
+     "gtype": 0,
+     "G": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "a_unc": 0.0,
+     "gmin_flag": 1.0,
+     "ipw": 0
+    },
+    "P4_uncertainty": {
+     "ptype": 2,
+     "scope_block": false,
+     "base": 0.0,
+     "boost": 0.0,
+     "warn": false,
+     "gtype": 2,
+     "G": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "a_unc": 3.3602894156038827,
+     "gmin_flag": 0.0,
+     "ipw": 1
+    },
+    "P5_score_stratified": {
+     "ptype": 2,
+     "scope_block": false,
+     "base": 0.0,
+     "boost": 0.0,
+     "warn": false,
+     "gtype": 1,
+     "G": [
+      0.0017777284404958767,
+      0.010508557285543117,
+      0.032650419613130775,
+      0.07767760820010974,
+      0.2646308437901086,
+      0.9261367370401287,
+      1.8074191012221414
+     ],
+     "a_unc": 0.0,
+     "gmin_flag": 0.2646308437901086,
+     "ipw": 1
+    },
+    "P6_neyman": {
+     "ptype": 2,
+     "scope_block": false,
+     "base": 0.0,
+     "boost": 0.0,
+     "warn": false,
+     "gtype": 1,
+     "G": [
+      0.06600421998855976,
+      0.16015704364023442,
+      0.2808735921533809,
+      0.42870041764233763,
+      0.08395602422977365,
+      0.12740929198261303,
+      0.09873778166356836
+     ],
+     "a_unc": 0.0,
+     "gmin_flag": 0.08395602422977365,
+     "ipw": 1
+    }
+   }
+  },
+  "wf0_cond2": {
+   "strata_info": {
+    "N": [
+     0.07019038166986694,
+     0.24620365710979664,
+     0.19115692523414718,
+     0.18866049622252387,
+     0.23540406621579335,
+     0.06038941356578181,
+     0.007995059982090191
+    ],
+    "pz": [
+     7.354116295757527e-05,
+     0.00043629434302718727,
+     0.0013681575938418306,
+     0.0033175363604533758,
+     0.012282867339271225,
+     0.062033371470391147,
+     0.29548298127008576
+    ],
+    "p_pass": 0.6962114602363346
+   },
+   "policies": {
+    "P1_horizon_uniform": {
+     "ptype": 0,
+     "scope_block": false,
+     "base": 0.0,
+     "boost": 0.0,
+     "warn": false,
+     "gtype": 0,
+     "G": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "a_unc": 0.0,
+     "gmin_flag": 1.0,
+     "ipw": 0
+    },
+    "P2_block_uniform": {
+     "ptype": 0,
+     "scope_block": true,
+     "base": 0.0,
+     "boost": 0.0,
+     "warn": false,
+     "gtype": 0,
+     "G": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "a_unc": 0.0,
+     "gmin_flag": 1.0,
+     "ipw": 0
+    },
+    "P3_horizon_warn_q05": {
+     "ptype": 1,
+     "scope_block": false,
+     "base": 0.05,
+     "boost": 0.5,
+     "warn": true,
+     "gtype": 0,
+     "G": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "a_unc": 0.0,
+     "gmin_flag": 1.0,
+     "ipw": 0
+    },
+    "P3_horizon_warn_q20": {
+     "ptype": 1,
+     "scope_block": false,
+     "base": 0.2,
+     "boost": 0.5,
+     "warn": true,
+     "gtype": 0,
+     "G": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "a_unc": 0.0,
+     "gmin_flag": 1.0,
+     "ipw": 0
+    },
+    "P3_block_warn_q05": {
+     "ptype": 1,
+     "scope_block": true,
+     "base": 0.05,
+     "boost": 0.5,
+     "warn": true,
+     "gtype": 0,
+     "G": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "a_unc": 0.0,
+     "gmin_flag": 1.0,
+     "ipw": 0
+    },
+    "P3_block_warn_q20": {
+     "ptype": 1,
+     "scope_block": true,
+     "base": 0.2,
+     "boost": 0.5,
+     "warn": true,
+     "gtype": 0,
+     "G": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "a_unc": 0.0,
+     "gmin_flag": 1.0,
+     "ipw": 0
+    },
+    "P4_uncertainty": {
+     "ptype": 2,
+     "scope_block": false,
+     "base": 0.0,
+     "boost": 0.0,
+     "warn": false,
+     "gtype": 2,
+     "G": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "a_unc": 33.52070160532227,
+     "gmin_flag": 0.0,
+     "ipw": 1
+    },
+    "P5_score_stratified": {
+     "ptype": 2,
+     "scope_block": false,
+     "base": 0.0,
+     "boost": 0.0,
+     "warn": false,
+     "gtype": 1,
+     "G": [
+      0.0024383795357279707,
+      0.014466064375472166,
+      0.04536353987765024,
+      0.10999843414265312,
+      0.4072588895203938,
+      2.0568195748124505,
+      9.797229547491835
+     ],
+     "a_unc": 0.0,
+     "gmin_flag": 0.4072588895203938,
+     "ipw": 1
+    },
+    "P6_neyman": {
+     "ptype": 2,
+     "scope_block": false,
+     "base": 0.0,
+     "boost": 0.0,
+     "warn": false,
+     "gtype": 1,
+     "G": [
+      0.060047963872309484,
+      0.14623254523781481,
+      0.2588330777577489,
+      0.4026570089773069,
+      0.08569839209931196,
+      0.18767779215089334,
+      0.3549919296027529
+     ],
+     "a_unc": 0.0,
+     "gmin_flag": 0.08569839209931196,
+     "ipw": 1
+    }
+   }
+  },
+  "wf1_cond0": {
+   "strata_info": {
+    "N": [
+     0.06385636408439212,
+     0.22479802703462975,
+     0.17615659383899337,
+     0.1771994334386526,
+     0.24028948670939043,
+     0.0889554571016673,
+     0.028744637792274434
+    ],
+    "pz": [
+     0.0008083583164265635,
+     0.004778389928353871,
+     0.014846608530225883,
+     0.03532110932036842,
+     0.12033139510387962,
+     0.4211274998366578,
+     0.8218590806442867
+    ],
+    "p_pass": 0.6420104183966678
+   },
+   "policies": {
+    "B1_passed_uniform": {
+     "ptype": 2,
+     "scope_block": false,
+     "base": 0.0,
+     "boost": 0.0,
+     "warn": false,
+     "gtype": 0,
+     "G": [
+      0.3115318087647008,
+      0.3115318087647008,
+      0.3115318087647008,
+      0.3115318087647008,
+      0.3115318087647008,
+      0.3115318087647008,
+      0.3115318087647008
+     ],
+     "a_unc": 0.0,
+     "gmin_flag": 1.0,
+     "ipw": 1
+    },
+    "B2_passed_block_uniform": {
+     "ptype": 2,
+     "scope_block": true,
+     "base": 0.0,
+     "boost": 0.0,
+     "warn": false,
+     "gtype": 0,
+     "G": [
+      0.3115318087647008,
+      0.3115318087647008,
+      0.3115318087647008,
+      0.3115318087647008,
+      0.3115318087647008,
+      0.3115318087647008,
+      0.3115318087647008
+     ],
+     "a_unc": 0.0,
+     "gmin_flag": 1.0,
+     "ipw": 1
+    },
+    "B3_passed_block_warn": {
+     "ptype": 1,
+     "scope_block": true,
+     "base": 0.3115318087647008,
+     "boost": 0.778829521911752,
+     "warn": true,
+     "gtype": 0,
+     "G": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "a_unc": 0.0,
+     "gmin_flag": 1.0,
+     "ipw": 1
+    },
+    "B4_passed_uncertainty": {
+     "ptype": 2,
+     "scope_block": false,
+     "base": 0.0,
+     "boost": 0.0,
+     "warn": false,
+     "gtype": 2,
+     "G": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "a_unc": 20.560082836861483,
+     "gmin_flag": 1.0,
+     "ipw": 1
+    },
+    "B5_passed_score_stratified": {
+     "ptype": 2,
+     "scope_block": false,
+     "base": 0.0,
+     "boost": 0.0,
+     "warn": false,
+     "gtype": 1,
+     "G": [
+      0.01614782075619837,
+      0.09545344248745867,
+      0.2965768626508748,
+      0.7055768841925586,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "a_unc": 0.0,
+     "gmin_flag": 1.0,
+     "ipw": 1
+    },
+    "B6_passed_neyman": {
+     "ptype": 2,
+     "scope_block": false,
+     "base": 0.0,
+     "boost": 0.0,
+     "warn": false,
+     "gtype": 1,
+     "G": [
+      0.07968855293576693,
+      0.19336162221707728,
+      0.33910574385172887,
+      0.5175807839377249,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "a_unc": 0.0,
+     "gmin_flag": 1.0,
+     "ipw": 1
+    }
+   }
+  },
+  "wf1_cond1": {
+   "strata_info": {
+    "N": [
+     0.06385636408439212,
+     0.22479802703462975,
+     0.17615659383899337,
+     0.1771994334386526,
+     0.24028948670939043,
+     0.0889554571016673,
+     0.028744637792274434
+    ],
+    "pz": [
+     0.0008083583164265635,
+     0.004778389928353871,
+     0.014846608530225883,
+     0.03532110932036842,
+     0.12033139510387962,
+     0.4211274998366578,
+     0.8218590806442867
+    ],
+    "p_pass": 0.6420104183966678
+   },
+   "policies": {
+    "B1_passed_uniform": {
+     "ptype": 2,
+     "scope_block": false,
+     "base": 0.0,
+     "boost": 0.0,
+     "warn": false,
+     "gtype": 0,
+     "G": [
+      0.3115318087647008,
+      0.3115318087647008,
+      0.3115318087647008,
+      0.3115318087647008,
+      0.3115318087647008,
+      0.3115318087647008,
+      0.3115318087647008
+     ],
+     "a_unc": 0.0,
+     "gmin_flag": 1.0,
+     "ipw": 1
+    },
+    "B2_passed_block_uniform": {
+     "ptype": 2,
+     "scope_block": true,
+     "base": 0.0,
+     "boost": 0.0,
+     "warn": false,
+     "gtype": 0,
+     "G": [
+      0.3115318087647008,
+      0.3115318087647008,
+      0.3115318087647008,
+      0.3115318087647008,
+      0.3115318087647008,
+      0.3115318087647008,
+      0.3115318087647008
+     ],
+     "a_unc": 0.0,
+     "gmin_flag": 1.0,
+     "ipw": 1
+    },
+    "B3_passed_block_warn": {
+     "ptype": 1,
+     "scope_block": true,
+     "base": 0.3115318087647008,
+     "boost": 0.778829521911752,
+     "warn": true,
+     "gtype": 0,
+     "G": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "a_unc": 0.0,
+     "gmin_flag": 1.0,
+     "ipw": 1
+    },
+    "B4_passed_uncertainty": {
+     "ptype": 2,
+     "scope_block": false,
+     "base": 0.0,
+     "boost": 0.0,
+     "warn": false,
+     "gtype": 2,
+     "G": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "a_unc": 20.560082836861483,
+     "gmin_flag": 1.0,
+     "ipw": 1
+    },
+    "B5_passed_score_stratified": {
+     "ptype": 2,
+     "scope_block": false,
+     "base": 0.0,
+     "boost": 0.0,
+     "warn": false,
+     "gtype": 1,
+     "G": [
+      0.01614782075619837,
+      0.09545344248745867,
+      0.2965768626508748,
+      0.7055768841925586,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "a_unc": 0.0,
+     "gmin_flag": 1.0,
+     "ipw": 1
+    },
+    "B6_passed_neyman": {
+     "ptype": 2,
+     "scope_block": false,
+     "base": 0.0,
+     "boost": 0.0,
+     "warn": false,
+     "gtype": 1,
+     "G": [
+      0.07968855293576693,
+      0.19336162221707728,
+      0.33910574385172887,
+      0.5175807839377249,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "a_unc": 0.0,
+     "gmin_flag": 1.0,
+     "ipw": 1
+    }
+   }
+  },
+  "wf1_cond2": {
+   "strata_info": {
+    "N": [
+     0.07019038166986694,
+     0.24620365710979664,
+     0.19115692523414718,
+     0.18866049622252387,
+     0.23540406621579335,
+     0.06038941356578181,
+     0.007995059982090191
+    ],
+    "pz": [
+     7.354116295757527e-05,
+     0.00043629434302718727,
+     0.0013681575938418306,
+     0.0033175363604533758,
+     0.012282867339271225,
+     0.062033371470391147,
+     0.29548298127008576
+    ],
+    "p_pass": 0.6962114602363346
+   },
+   "policies": {
+    "B1_passed_uniform": {
+     "ptype": 2,
+     "scope_block": false,
+     "base": 0.0,
+     "boost": 0.0,
+     "warn": false,
+     "gtype": 0,
+     "G": [
+      0.28727861908650915,
+      0.28727861908650915,
+      0.28727861908650915,
+      0.28727861908650915,
+      0.28727861908650915,
+      0.28727861908650915,
+      0.28727861908650915
+     ],
+     "a_unc": 0.0,
+     "gmin_flag": 1.0,
+     "ipw": 1
+    },
+    "B2_passed_block_uniform": {
+     "ptype": 2,
+     "scope_block": true,
+     "base": 0.0,
+     "boost": 0.0,
+     "warn": false,
+     "gtype": 0,
+     "G": [
+      0.28727861908650915,
+      0.28727861908650915,
+      0.28727861908650915,
+      0.28727861908650915,
+      0.28727861908650915,
+      0.28727861908650915,
+      0.28727861908650915
+     ],
+     "a_unc": 0.0,
+     "gmin_flag": 1.0,
+     "ipw": 1
+    },
+    "B3_passed_block_warn": {
+     "ptype": 1,
+     "scope_block": true,
+     "base": 0.28727861908650915,
+     "boost": 0.7181965477162728,
+     "warn": true,
+     "gtype": 0,
+     "G": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "a_unc": 0.0,
+     "gmin_flag": 1.0,
+     "ipw": 1
+    },
+    "B4_passed_uncertainty": {
+     "ptype": 2,
+     "scope_block": false,
+     "base": 0.0,
+     "boost": 0.0,
+     "warn": false,
+     "gtype": 2,
+     "G": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "a_unc": 200.10589203174504,
+     "gmin_flag": 1.0,
+     "ipw": 1
+    },
+    "B5_passed_score_stratified": {
+     "ptype": 2,
+     "scope_block": false,
+     "base": 0.0,
+     "boost": 0.0,
+     "warn": false,
+     "gtype": 1,
+     "G": [
+      0.014681268214836445,
+      0.08709889826318276,
+      0.2731298743119502,
+      0.66229087440983,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "a_unc": 0.0,
+     "gmin_flag": 1.0,
+     "ipw": 1
+    },
+    "B6_passed_neyman": {
+     "ptype": 2,
+     "scope_block": false,
+     "base": 0.0,
+     "boost": 0.0,
+     "warn": false,
+     "gtype": 1,
+     "G": [
+      0.0724974152948545,
+      0.17655022548763266,
+      0.31249567712490006,
+      0.48613792239961673,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "a_unc": 0.0,
+     "gmin_flag": 1.0,
+     "ipw": 1
+    }
+   }
+  }
+ },
+ "calibration": {
+  "n": 20000,
+  "role": "calibration",
+  "target": 0.02,
+  "method": "randomized",
+  "rule": "h* = max(h_const(r=0.10), h_path(0.05->0.10 at tau)); each (workflow, condition, policy, monitor) separately",
+  "feedback": "warning policies calibrated as complete procedures: fixed-point iteration h_{k+1}=calibrated threshold with warning at h_k/4 (start: block-uniform threshold), stop when |h_{k+1}-h_k|<0.02 or 8 iterations; final procedure = warning at h_k/4, alarm threshold h_{k+1} (calibrated under that warning). Betting under warning policies: warning from mSR (fixed), Betting threshold calibrated on the same streams."
+ },
+ "validation": {
+  "n": 10000,
+  "role": "validation",
+  "paths": [
+   "const 0.10",
+   "0.05->0.10",
+   "const 0.05 (reported)"
+  ],
+  "gate": "one-sided 95% CP upper bound <= 0.03, Bonferroni family = all (workflow x condition x policy) x 2 null paths for the given monitor = 90 (mSR family; Betting family separately 90)"
+ },
+ "evaluation": {
+  "n": 10000,
+  "role": "evaluation",
+  "endpoint": "p_D = P(tau <= T <= tau+D-1), D in (5000,10000,20000), primary D=10000"
+ },
+ "primary_contrast": {
+  "what": "W-A P5 score-stratified (IPW mSR) minus P1 horizon-uniform (mSR), pi=0.10, d=500, D=10000",
+  "ci": "paired percentile bootstrap, 10000 resamples, 95%",
+  "decision": "P5 better iff lower bound > 0; worse iff upper bound < 0; otherwise no evidence of difference"
+ },
+ "secondary": "all other contrasts vs P1 (W-A) or B1 (W-B), both monitors, all conditions: descriptive, unadjusted bootstrap CIs",
+ "diagnostics": [
+  "FA both null paths + const 0.05",
+  "informative labels per audit (yield)",
+  "Kish ESS of window labels (sum w)^2/sum w^2",
+  "audits within [tau, tau+D-1]",
+  "forced audits",
+  "floor violations",
+  "warning occupancy pre/post",
+  "beta*(alpha=0.02) at uniform label rate qbar*pi and full-information rate pi (theory/converse.np_power, L=D-d)",
+  "timing vs yield decomposition for warning-boost: window audit count, yield, and beta* at realized window label count (descriptive)"
+ ],
+ "resources": "NUMBA_NUM_THREADS=4, chunks of 5000 streams, CPU only",
+ "amendments": [
+  {
+   "when": "2026-11-13 08:01:36.290657",
+   "before": "final calibration/validation/evaluation runs (all final numbers come after this amendment)",
+   "disclosure": "A smoke run (2000 calibration / 1000 validation / 1000 evaluation streams, replicate ids 0..1999 of each role) was executed to debug the pipeline; it showed that the warning rule \"S >= h/4\" on the log scale is active for most pre-change items, because log mixture-SR grows like log(#labels) under the null. Final runs use fresh replicate ids starting at 100000 for every role.",
+   "changes": [
+    "P3 warning rule fixed to the reading consistent with the archived diagnostics (original q05 policies requested ~500 audits pre-change, i.e. warnings almost never active under the null): SR evidence exp(S) >= exp(h)/4, i.e. S >= h - ln 4.",
+    "Added exploratory W-A variants P3x_* with the log-scale rule S >= h/4 (frequent warnings) to show the influence of the warning threshold (R2-6). These are labelled exploratory/post hoc-in-design (added after the smoke run).",
+    "Replicate offset 100000 for all roles."
+   ],
+   "policies": {
+    "wf0_cond0": [
+     "P1_horizon_uniform",
+     "P2_block_uniform",
+     "P3_block_warn_q05",
+     "P3_block_warn_q20",
+     "P3_horizon_warn_q05",
+     "P3_horizon_warn_q20",
+     "P3x_block_logwarn_q05",
+     "P3x_block_logwarn_q20",
+     "P3x_horizon_logwarn_q05",
+     "P3x_horizon_logwarn_q20",
+     "P4_uncertainty",
+     "P5_score_stratified",
+     "P6_neyman"
+    ],
+    "wf0_cond1": [
+     "P1_horizon_uniform",
+     "P2_block_uniform",
+     "P3_block_warn_q05",
+     "P3_block_warn_q20",
+     "P3_horizon_warn_q05",
+     "P3_horizon_warn_q20",
+     "P3x_block_logwarn_q05",
+     "P3x_block_logwarn_q20",
+     "P3x_horizon_logwarn_q05",
+     "P3x_horizon_logwarn_q20",
+     "P4_uncertainty",
+     "P5_score_stratified",
+     "P6_neyman"
+    ],
+    "wf0_cond2": [
+     "P1_horizon_uniform",
+     "P2_block_uniform",
+     "P3_block_warn_q05",
+     "P3_block_warn_q20",
+     "P3_horizon_warn_q05",
+     "P3_horizon_warn_q20",
+     "P3x_block_logwarn_q05",
+     "P3x_block_logwarn_q20",
+     "P3x_horizon_logwarn_q05",
+     "P3x_horizon_logwarn_q20",
+     "P4_uncertainty",
+     "P5_score_stratified",
+     "P6_neyman"
+    ],
+    "wf1_cond0": [
+     "B1_passed_uniform",
+     "B2_passed_block_uniform",
+     "B3_passed_block_warn",
+     "B4_passed_uncertainty",
+     "B5_passed_score_stratified",
+     "B6_passed_neyman"
+    ],
+    "wf1_cond1": [
+     "B1_passed_uniform",
+     "B2_passed_block_uniform",
+     "B3_passed_block_warn",
+     "B4_passed_uncertainty",
+     "B5_passed_score_stratified",
+     "B6_passed_neyman"
+    ],
+    "wf1_cond2": [
+     "B1_passed_uniform",
+     "B2_passed_block_uniform",
+     "B3_passed_block_warn",
+     "B4_passed_uncertainty",
+     "B5_passed_score_stratified",
+     "B6_passed_neyman"
+    ]
+   }
+  }
+ ],
+ "code_hashes_main_run_sha256": {
+  "core.py": "cf33a78126eed63a173009e383244e664a4ce6f32d1d027fe4dfcc19409bd6ba",
+  "design.py": "4d2c636678679b9d8317cfae6bba0c3b346538913f93dd7830f648ea746d5e57",
+  "kernel.py": "84b8a587868cd4beffd6acc8917bf7db78c5bff2620296b7391f368575bed02f",
+  "run.py": "c698d6567d0b2c9a29655472994477c8ceee5aee2975047223d1f175c0d451cc",
+  "summarize.py": "09f4d89d51aed1faa72bec96ae180c1b64b874c179c39c4c113a391e022b083f",
+  "write_protocol.py": "57e7bffedbced69744be1b17c8e7bcf4de4b2275387d82562acd66d937b633be"
+ },
+ "followup_2026_11_13": {
+  "written": "2026-11-13 08:46:52.465437",
+  "trigger": "external (Codex) review \"ready with changes\" relayed by the lead; written BEFORE any follow-up calibration/validation/evaluation (only a 2000-stream pilot-role check of kernel2 identity and model moments)",
+  "classification": {
+   "confirmatory": "only the prespecified primary contrast W-A P5 - P1 (main run)",
+   "P3": "amended secondary (warning rule fixed after smoke run)",
+   "P3x": "exploratory",
+   "followup": "all sensitivity analyses, descriptive, unadjusted; no new confirmatory claims"
+  },
+  "endpoint_wording": "p_D = probability of timely detection P(tau <= T <= tau+D-1); higher is better",
+  "replicate_ids": "fresh: 200000..219999 per (role, condition, path); disjoint from smoke (0..1999) and main (100000..119999)",
+  "code": {
+   "kernel2": "copy of kernel.py v1 + no-leakage model + weight clip + extra stats; verified bit-identical to v1 for model 0 on 300 pilot streams",
+   "followup": "followup.py",
+   "hashes_sha256": {
+    "design.py": "4d2c636678679b9d8317cfae6bba0c3b346538913f93dd7830f648ea746d5e57",
+    "core.py": "cf33a78126eed63a173009e383244e664a4ce6f32d1d027fe4dfcc19409bd6ba",
+    "summarize.py": "09f4d89d51aed1faa72bec96ae180c1b64b874c179c39c4c113a391e022b083f",
+    "run.py": "c698d6567d0b2c9a29655472994477c8ceee5aee2975047223d1f175c0d451cc",
+    "write_protocol.py": "57e7bffedbced69744be1b17c8e7bcf4de4b2275387d82562acd66d937b633be",
+    "followup.py": "f9569b7df8f10593dc5159a1717ceb4a7ecce9c5aeccfe20329eb2fd9d6535e5",
+    "kernel.py": "84b8a587868cd4beffd6acc8917bf7db78c5bff2620296b7391f368575bed02f",
+    "kernel2.py": "74bf810c2819a9a5ce80f0c9558b4b14fe624c20771903a5270160a9d4528325"
+   }
+  },
+  "sensitivities": {
+   "no_leakage": {
+    "description": "score distribution fixed over time: S|Z=0 ~ N(0,1), S|Z=1 ~ N(mu_ref,1) for all t (AUC 0.90). The pass decision is a separate component (C_MISS uniform): P(pass | S, Z=0) = Phi(a0 - S), P(pass | S, Z=1, t) = Phi(a1_t - S), slope 1; a0 = sqrt2*Phi^-1(Phi(c)) keeps P(pass|Z=0)=0.702 as in main model; a1_t = mu_ref + sqrt2*Phi^-1(r_t) gives P(M|Z=1)=r_t exactly. Only the conditional pass probability of defects changes at tau; the marginal flag rate changes by pi*(r1-r_pre) (inherent: misses are passes).",
+    "policies": "W-A P1, P4, P5, P6; W-B B1, B4, B5, B6; designs recomputed under this model (P6 sd of Z(M-r0) per stratum; W-B strata over passed items incl. S>=c; W-B P4 posterior P(Z|S,pass)); W-A IPW stake bound uses min_g over ALL strata (caught defects possible at any score)",
+    "conditions": [
+     "pi0.10_d500",
+     "pi0.10_d0"
+    ]
+   },
+   "auc": {
+    "values": [
+     0.8,
+     0.95
+    ],
+    "model": "main (mean-shift) model, c re-derived so P(M|Z)=r0 at reference",
+    "policies": "P1, P4-P6, B1, B4-B6",
+    "condition": "pi0.10_d500"
+   },
+   "tau": {
+    "values": [
+     5000,
+     20000
+    ],
+    "policies": "P1, P3 (4), P3x (4), B1, B3",
+    "condition": "pi0.10_d500",
+    "note": "D=20000 at tau=20000 is clipped at H"
+   },
+   "weight_clip": {
+    "policy": "P5",
+    "clip": "normalized IPW weight q-bar/p truncated at 2 (and stake bound); biased, empirically calibrated only, no Ville guarantee",
+    "models": [
+     "main",
+     "no_leakage"
+    ],
+    "condition": "pi0.10_d500"
+   },
+   "diagnostics": {
+    "what": "main-run primary condition, all policies: re-evaluation of the SAME evaluation streams (ids 100000..109999) with the SAME thresholds through kernel2 (alarm times must reproduce exactly) plus label-level weight distribution (median/p99/max) from labels of the first 1000 evaluation streams, audits before/after tau, budget-exhaustion time distribution, W-B resource accounting (paid audits, flagged reviews, total labels)."
+   }
+  },
+  "calibration_validation_evaluation": "identical rules to main run (20k cal two-point null, 10k validation per null path, gate CP upper <= 0.03 Bonferroni over the follow-up family = all follow-up procedures x 2 paths, 10k evaluation; paired bootstrap 10000 vs P1/B1 within scenario)"
+ },
+ "recal_2026_11_13": {
+  "written": "2026-11-13 10:23:31.083878",
+  "trigger": "follow-up gate failed in 2/112 cells (auc0.95 W-B: B4 mSR upper 0.0309, B5 Betting upper 0.0304); lead request",
+  "scope": "ALL W-B procedures of scenario auc0.95_pi0.10_d500 (B1, B4, B5, B6), both monitors - uniform, not only failed cells",
+  "calibration": "100,000 streams per null path (const 0.10, path 0.05->0.10), role calibration, fresh replicate ids 300000..399999; same rule h*=max(h_const,h_path), randomized",
+  "validation": "10,000 streams per null path (3 paths), role validation, fresh ids 300000..309999; same gate: one-sided CP upper <= 0.03, Bonferroni family 112 (follow-up family)",
+  "evaluation": "re-evaluate p_D on the EXISTING follow-up evaluation streams (ids 200000..209999) with the new thresholds; contrasts vs recalibrated B1",
+  "reporting": "report original failures and recalibrated results; any cell still failing is reported as uncertified"
+ }
+}

@@ -1,0 +1,18 @@
+{'target': 0.05, 'Hs': 264158, 'tau': 194192, 't_late': 226506, 't_end': 262951, 'pi_hat': np.float64(0.012110176485285321), 'r_stable': np.float64(0.013422818791946308), 'n_def_stable': 1043, 'miss_stable': 14, 'r_exc': np.float64(0.07623888182973317), 'n_def_exc': 787, 'miss_exc': 60, 'r_post': np.float64(0.05844155844155844), 'n_def_post': 2156, 'miss_post': 126}
+[t1] q=0.1 d=0 calibrated 192s
+[t1] q=0.1 d=0 done 225s
+[t1] q=0.1 d=3000 calibrated 406s
+[t1] q=0.1 d=3000 done 441s
+[t1] q=0.2 d=0 calibrated 616s
+[t1] q=0.2 d=0 done 650s
+[t1] q=0.2 d=3000 calibrated 828s
+[t1] q=0.2 d=3000 done 858s
+[t1] q=0.5 d=0 calibrated 1038s
+[t1] q=0.5 d=0 done 1076s
+[t1] q=0.5 d=3000 calibrated 1243s
+[t1] q=0.5 d=3000 done 1278s
+[t1] q=1.0 d=0 calibrated 1457s
+[t1] q=1.0 d=0 done 1493s
+[t1] q=1.0 d=3000 calibrated 1670s
+[t1] q=1.0 d=3000 done 1706s
+finished 1706.1308314800262

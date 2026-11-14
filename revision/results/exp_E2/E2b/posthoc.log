@@ -1,0 +1,18 @@
+PH1 q=0.2 base_iid 80s
+PH1 q=0.2 markov_phi0.3 74s
+PH1 q=0.2 markov_phi0.6 79s
+PH1 q=0.2 board_icc_r0.2 82s
+PH1 q=0.5 base_iid 163s
+PH1 q=0.5 markov_phi0.3 162s
+PH1 q=0.5 markov_phi0.6 161s
+PH1 q=0.5 board_icc_r0.2 159s
+total done
+PH2 q=0.2 base_iid 95s
+PH2 q=0.2 markov_phi0.3 80s
+PH2 q=0.2 markov_phi0.6 84s
+PH2 q=0.2 board_icc_r0.2 85s
+PH2 q=0.5 base_iid 152s
+PH2 q=0.5 markov_phi0.3 160s
+PH2 q=0.5 markov_phi0.6 162s
+PH2 q=0.5 board_icc_r0.2 164s
+total done

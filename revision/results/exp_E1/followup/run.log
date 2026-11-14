@@ -1,0 +1,97 @@
+[   60.4s] repair 0 cal done
+[   67.5s] repair 0 val done
+[   70.1s] repair 0 eval 0.12 done
+[   72.8s] repair 0 eval 0.2 done
+[   75.4s] repair 0 eval 0.3 done
+[   75.4s] repair 0 wrote repair_0_adwin_s04
+[   61.9s] repair 1 cal done
+[   69.7s] repair 1 val done
+[   72.1s] repair 1 eval 0.12 done
+[   74.5s] repair 1 eval 0.2 done
+[   77.0s] repair 1 eval 0.3 done
+[   77.0s] repair 1 wrote repair_1_cusum_0.12_s07
+[   64.7s] repair 2 cal done
+[   72.9s] repair 2 val done
+[   76.3s] repair 2 eval 0.12 done
+[   79.8s] repair 2 eval 0.2 done
+[   83.2s] repair 2 eval 0.3 done
+[   83.2s] repair 2 wrote repair_2_cusum_0.20_s20
+[   78.0s] repair 3 cal done
+[   88.8s] repair 3 val done
+[   92.8s] repair 3 eval 0.12 done
+[   96.7s] repair 3 eval 0.2 done
+[  100.7s] repair 3 eval 0.3 done
+[  100.8s] repair 3 wrote repair_3_cusum_0.12_s21
+[   33.8s] fineq 0 cal done
+[   44.7s] fineq 0 val done
+[   48.5s] fineq 0 eval 0.2 done
+[   48.5s] fineq 0 wrote fineq_00_q0.11_d0
+[   40.3s] fineq 1 cal done
+[   53.1s] fineq 1 val done
+[   57.9s] fineq 1 eval 0.2 done
+[   58.0s] fineq 1 wrote fineq_01_q0.13_d0
+[   37.5s] fineq 2 cal done
+[   50.8s] fineq 2 val done
+[   56.0s] fineq 2 eval 0.2 done
+[   56.0s] fineq 2 wrote fineq_02_q0.15_d0
+[   36.5s] fineq 3 cal done
+[   51.0s] fineq 3 val done
+[   55.5s] fineq 3 eval 0.2 done
+[   55.6s] fineq 3 wrote fineq_03_q0.17_d0
+[   35.8s] fineq 4 cal done
+[   48.7s] fineq 4 val done
+[   54.0s] fineq 4 eval 0.2 done
+[   54.1s] fineq 4 wrote fineq_04_q0.19_d0
+[   41.4s] fineq 5 cal done
+[   56.5s] fineq 5 val done
+[   61.4s] fineq 5 eval 0.2 done
+[   61.4s] fineq 5 wrote fineq_05_q0.21_d0
+[   42.8s] fineq 6 cal done
+[   59.9s] fineq 6 val done
+[   65.5s] fineq 6 eval 0.2 done
+[   65.5s] fineq 6 wrote fineq_06_q0.23_d0
+[   40.4s] fineq 7 cal done
+[   53.8s] fineq 7 val done
+[   58.7s] fineq 7 eval 0.2 done
+[   58.8s] fineq 7 wrote fineq_07_q0.25_d0
+[   40.9s] fineq 8 cal done
+[   57.5s] fineq 8 val done
+[   63.1s] fineq 8 eval 0.2 done
+[   63.1s] fineq 8 wrote fineq_08_q0.27_d0
+[   37.0s] fineq 9 cal done
+[   49.7s] fineq 9 val done
+[   54.4s] fineq 9 eval 0.2 done
+[   54.5s] fineq 9 wrote fineq_09_q0.11_d500
+[   37.1s] fineq 10 cal done
+[   51.3s] fineq 10 val done
+[   56.6s] fineq 10 eval 0.2 done
+[   56.6s] fineq 10 wrote fineq_10_q0.13_d500
+[   32.9s] fineq 11 cal done
+[   44.9s] fineq 11 val done
+[   49.7s] fineq 11 eval 0.2 done
+[   49.7s] fineq 11 wrote fineq_11_q0.15_d500
+[   39.6s] fineq 12 cal done
+[   53.7s] fineq 12 val done
+[   58.3s] fineq 12 eval 0.2 done
+[   58.4s] fineq 12 wrote fineq_12_q0.17_d500
+[   37.6s] fineq 13 cal done
+[   51.7s] fineq 13 val done
+[   56.8s] fineq 13 eval 0.2 done
+[   56.9s] fineq 13 wrote fineq_13_q0.19_d500
+[   40.7s] fineq 14 cal done
+[   54.2s] fineq 14 val done
+[   58.2s] fineq 14 eval 0.2 done
+[   58.3s] fineq 14 wrote fineq_14_q0.21_d500
+[   36.5s] fineq 15 cal done
+[   50.8s] fineq 15 val done
+[   56.2s] fineq 15 eval 0.2 done
+[   56.2s] fineq 15 wrote fineq_15_q0.23_d500
+[   42.1s] fineq 16 cal done
+[   58.7s] fineq 16 val done
+[   64.4s] fineq 16 eval 0.2 done
+[   64.4s] fineq 16 wrote fineq_16_q0.25_d500
+[   43.0s] fineq 17 cal done
+[   60.2s] fineq 17 val done
+[   66.3s] fineq 17 eval 0.2 done
+[   66.3s] fineq 17 wrote fineq_17_q0.27_d500
+ALLDONE

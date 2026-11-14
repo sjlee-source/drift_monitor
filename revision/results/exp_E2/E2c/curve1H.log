@@ -1,0 +1,17 @@
+curve1H q=0.2 base_iid thresholds 148s
+curve1H q=0.2 base_iid done 197s
+curve1H q=0.2 markov_phi0.3 thresholds 166s
+curve1H q=0.2 markov_phi0.3 done 215s
+curve1H q=0.2 markov_phi0.6 thresholds 153s
+curve1H q=0.2 markov_phi0.6 done 202s
+curve1H q=0.2 board_icc_r0.2 thresholds 156s
+curve1H q=0.2 board_icc_r0.2 done 209s
+curve1H q=0.5 base_iid thresholds 280s
+curve1H q=0.5 base_iid done 329s
+curve1H q=0.5 markov_phi0.3 thresholds 290s
+curve1H q=0.5 markov_phi0.3 done 339s
+curve1H q=0.5 markov_phi0.6 thresholds 290s
+curve1H q=0.5 markov_phi0.6 done 339s
+curve1H q=0.5 board_icc_r0.2 thresholds 288s
+curve1H q=0.5 board_icc_r0.2 done 338s
+curve1H total done

@@ -1,0 +1,224 @@
+{
+ "experiment": "E1 baselines / matched-FA comparison (IEEE Access revision, R2-4, R3)",
+ "written": "2026-11-13, before the full calibration/validation/evaluation run (a 10%-scale timing pilot with role='pilot' streams, disjoint from all reported streams, was run first; its numbers are not reported)",
+ "resumed_note": "Experiment started 2026-11-11 by a previous agent (WindowLR kernel + validation only). WindowLR code reviewed on 2026-11-13: no defects found; reused unchanged. Validation vs naive O(n^2) reference: exp_E1/winlr_validation.json (max abs path error 0, 38,737 values, constant d=0/500 and geometric delays, first crossings and restart counts).",
+ "code": "/home/sjlee/Research/drift_monitor/revision/experiments/E1/{winlr.py,e1_common.py,run_setting.py,exact_cusum_check.py,aggregate.py}",
+ "seeding": {
+  "experiment_id": 11,
+  "master": 20261111,
+  "roles": "calibration=1, validation=2, evaluation=3 (rng.ROLES)",
+  "null_condition_id": "100 + 4*setting_idx + {const10:0, path:1, const05:2}",
+  "harmful_condition_id": "500 + 3*setting_idx + index(r1 in [0.12,0.20,0.30])",
+  "note": "independent streams for every (stage, null path, harmful condition); CRN across monitors within a batch"
+ },
+ "model": {
+  "H": 29999,
+  "tau": 10000,
+  "r0": 0.1,
+  "r_pre": 0.05,
+  "audits": "Bernoulli(q), noninformative",
+  "delay": "constant d",
+  "extras": "no label noise, no board/Markov effects"
+ },
+ "grid": {
+  "pi": [
+   0.01,
+   0.1
+  ],
+  "r1": [
+   0.12,
+   0.2,
+   0.3
+  ],
+  "q": [
+   0.1,
+   0.15,
+   0.2,
+   0.3,
+   0.5,
+   1.0
+  ],
+  "d": [
+   0,
+   500
+  ],
+  "null_settings": "24 = pi x q x d (thresholds do not depend on r1)",
+  "harmful_conditions": 72,
+  "deadlines": [
+   5000,
+   10000,
+   20000
+  ],
+  "primary_deadline": 10000
+ },
+ "stream_counts": {
+  "calibration_per_null_path": 20000,
+  "validation_per_null_path": 10000,
+  "evaluation_per_condition": 10000,
+  "arl_restart": "first 2,500 validation streams under constant 0.10 (horizon H, restart after alarm, threshold h_hi without randomization)",
+  "budget_decision": "pilot projected < 2 h total at 4 threads, so no reduction of calibration streams for supplement monitors"
+ },
+ "calibration": {
+  "rule": "h* = stricter of h_const (FA 0.02 over H at constant r=0.10) and h_path (FA 0.02 under 0.05->0.10 at tau); calibrate_threshold(method='randomized', tol=1e-9) on per-stream maxima; stricter = larger h, tie -> smaller gamma",
+  "target": 0.02
+ },
+ "validation": {
+  "paths": [
+   "const10",
+   "path 0.05->0.10",
+   "const05"
+  ],
+  "statistic": "any alarm within 1..H, randomized rule with the stream's tiebreak uniform",
+  "gate": "one-sided 95% Clopper-Pearson upper bound, Bonferroni over the primary family, <= 0.03",
+  "primary_family": "12 core matched monitors x 24 null settings x 2 gated paths (const10, path) = 576",
+  "const05": "reported, not gated",
+  "non_primary": "supplement/native/const-calibrated variants are reported with the same CP bounds but are outside the gated family"
+ },
+ "monitors": {
+  "core_matched": {
+   "cusum_0.12": "CUSUM(p1=0.12)",
+   "cusum_0.20": "CUSUM(p1=0.20)",
+   "betting": "Betting(r0, gain 4, cap 9, window 50), calibrated",
+   "msr": "MixtureSR (original 5-component; = e-SR family)",
+   "eSR": "EDetector kind=SR alpha_design=1e-3 min_gap 0.02 (SRR 2024)",
+   "ewma_0.05": "EWMA lambda=0.05",
+   "glr_W500": "GLR-CUSUM unknown r1>r0, window 500",
+   "winbin_W200": "window binomial W=200",
+   "winlr_D10000": "NEW window LR scan: LLR(r1=0.20 vs 0.10) over arrived labels with origin in [t-D+1, t], D=10,000",
+   "periodic": "periodic exact binomial (interval 3000), calibrated threshold on -log p",
+   "adwin": "ADWIN(delta=0.002), composite-calibrated",
+   "ddm": "DDM(n_min=30), composite-calibrated"
+  },
+  "supplement_matched": {
+   "eCUSUM": "EDetector kind=CUSUM",
+   "cs_detector": "CSDetector (own instantiation of backward CS, see library docstring)"
+  },
+  "native_reference_not_ranked": {
+   "betting_native": "log(1/0.02) (Ville)",
+   "eSR_native": "log(1/1e-3) ARL design",
+   "eCUSUM_native": "log(1/1e-3)",
+   "periodic_bonferroni": "original rule p <= 0.02/K",
+   "adwin_native": "ln(1/0.002)",
+   "ddm_native": "3",
+   "cs_native": "log(1/0.02)"
+  },
+  "constant_null_calibrated_spec_violation": {
+   "adwin_constcal": "calibrated on constant 0.10 only; FA on 0.05->0.10 path reported",
+   "ddm_constcal": "same"
+  }
+ },
+ "metrics": {
+  "p_D": "P(tau <= T <= tau+D-1), all streams in denominator, exact CP 95% two-sided CI",
+  "early_alarm_rate": "P(T < tau)",
+  "restricted_mean_delay": "mean of (T - tau) if timely by D, else D; early alarms are assigned D (counted as failures) and reported separately",
+  "delay_quantiles": "median and 90% quantile of T - tau among timely detections (inverted CDF), per D",
+  "arl": "false alarms per 10,000 items under constant 0.10 with restart (supplement)",
+  "oracle": "beta*(0.02) = theory/converse.np_power(L=max(0,D-d), rho=pi*q, r0=0.10, r1, alpha=0.02); ratio p_D/beta*",
+  "oracle_exceedance_check": "flag any (monitor, condition, D) whose two-sided 95% CP lower bound of p_D exceeds beta*; any flag -> investigate FA validity",
+  "cusum_sanity": "MC p_D of cusum_0.20 vs exact DP of the integer CUSUM (theory/exact_cusum.py, scale_B=80) with exact randomized composite calibration at 0.02, all 72 conditions x 3 deadlines; report z-scores",
+  "tradeoff": "4 conditions (pi,r1,q,d) = (0.1,0.2,0.2,500), (0.1,0.12,1,500), (0.01,0.3,1,0), (0.1,0.3,0.1,500); strict thresholds from the union of 120-level null-maxima quantile grids of both gated paths (validation streams); FA_comp = max(FA_const10, FA_path) on validation streams; p_D on evaluation streams; summary p_D at FA_comp <= {0.005, 0.01, 0.02, 0.05}"
+ },
+ "summaries": {
+  "q_min": "for each monitor and scenario (pi, r1, d), smallest evaluated q with point p_D(10k) >= 0.80 (also reported: smallest q whose CP lower bound >= 0.80); compared with q_oracle and q_cusum from theory/qstar_grid.csv",
+  "ranking": "per harmful condition at D=10k, rank core matched monitors by p_D (average ranks for ties); report mean rank, number of conditions where each is best or within 0.01 of best, and Kendall's W across the conditions where not all monitors have p_D in {0,1}",
+  "post_hoc": "anything not listed here is labelled post hoc in REPORT.md"
+ },
+ "amendment_2026-11-13": {
+  "label": "POST HOC / FOLLOW-UP (written 2026-11-13 after the primary run and external Codex review, BEFORE running these analyses)",
+  "A1_gate_repair": {
+   "cells": [
+    [
+     "adwin",
+     [
+      0.01,
+      0.2,
+      0
+     ],
+     "path"
+    ],
+    [
+     "cusum_0.12",
+     [
+      0.01,
+      0.3,
+      500
+     ],
+     "const10"
+    ],
+    [
+     "cusum_0.20",
+     [
+      0.1,
+      0.5,
+      0
+     ],
+     "const10"
+    ],
+    [
+     "cusum_0.12",
+     [
+      0.1,
+      0.5,
+      500
+     ],
+     "const10"
+    ]
+   ],
+   "procedure": "for each failed monitor x setting: recalibrate (same composite randomized rule, target 0.02) on 100,000 fresh calibration streams per null path (role calibration, condition ids 3000+4*setting+path); revalidate on 10,000 fresh validation streams per path (role validation, ids 3100+4*setting+path); gate unchanged (one-sided CP upper, Bonferroni family 576, <= 0.03); re-evaluate the 3 harmful conditions of that setting on the ORIGINAL evaluation streams (same ids, CRN with other monitors). Original results kept; repaired results in *_repair.csv. If a repaired cell still fails, it is reported as 'not certified' and excluded from confirmatory rankings."
+  },
+  "A2_crn_paired": {
+   "label": "exploratory (no multiplicity adjustment)",
+   "monitors": [
+    "msr",
+    "cusum_0.20",
+    "eSR",
+    "winlr_D10000"
+   ],
+   "conditions": "the 4 trade-off conditions",
+   "deadlines": [
+    5000,
+    10000,
+    20000
+   ],
+   "statistic": "difference in timely-detection indicator on the same evaluation streams (CRN), mean and 95% normal CI from paired SD; also exact McNemar p-value"
+  },
+  "A3_fine_q": {
+   "pi": 0.1,
+   "r1": 0.2,
+   "d": [
+    0,
+    500
+   ],
+   "q": [
+    0.11,
+    0.13,
+    0.15,
+    0.17,
+    0.19,
+    0.21,
+    0.23,
+    0.25,
+    0.27
+   ],
+   "monitors": "12 core",
+   "streams": "cal 20,000 / val 10,000 per path / eval 10,000 (same rules as primary)",
+   "ids": "null 4000+4*j+path, harmful 4500+j (j = index of (q,d))",
+   "q_min": "linear interpolation of p_D(10k) in log q across all evaluated q (original + fine) at 0.80; CI: q where the CP upper curve crosses 0.80 (lower end) and where the CP lower curve crosses 0.80 (upper end); non-monotone crossings reported"
+  },
+  "A4_figures": "trade-off curves (4 conditions), p_D vs q with oracle beta* (incl. fine grid), timely-delay distributions; PNG+PDF in figures/",
+  "A5_reporting": "rank summaries with and without DDM (DDM reported as infeasible under this protocol); restart metric renamed 'restart false-alarm incidence' (per 10,000 items)"
+ },
+ "amendment_2026-11-13b": {
+  "label": "FOLLOW-UP, CONFIRMATORY VERSION (decided by lead 2026-11-13 after observing 20k-calibration gate failures; written BEFORE running). Uniform re-run, not selective repair; original 20k results and the selective repair (amendment_2026-11-13 A1) are kept as reported history.",
+  "calibration": "100,000 fresh calibration streams per null path (const 0.10 and 0.05->0.10) for EVERY monitor x setting, same composite randomized rule, target 0.02",
+  "validation": "10,000 fresh independent validation streams per path (const10, path, const05); gate one-sided 95% CP upper <= 0.03, Bonferroni family = 12 core x 24 main settings x 2 paths (576) + 12 core x 18 fine-q settings x 2 paths (432) = 1008",
+  "ids": {
+   "main": "calibration role ids 6000+4*setting+path, validation role ids 6100+4*setting+path; evaluation = SAME ids as primary (500+3*setting+r1 index), i.e. identical CRN evaluation streams",
+   "fine_q": "calibration ids 7000+4*j+path, validation ids 7100+4*j+path; evaluation same as amendment A3 (4500+j)"
+  },
+  "scope": "all monitors/variants of the primary run (core, supplement, native, const-calibrated) for the main grid; core 12 for fine-q grid",
+  "outputs": "raw_cal100k/, followup_cal100k/, *_cal100k.csv, figures/cal100k/",
+  "rules": "cells failing the gate under 100k are reported as uncertified and excluded from confirmatory rankings; no further repair",
+  "comparison": "report gate pass count, max upper bound, max |delta p_D| vs 20k version, rank changes and q_min changes"
+ }
+}

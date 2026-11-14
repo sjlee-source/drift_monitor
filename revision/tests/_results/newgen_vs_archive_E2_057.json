@@ -1,0 +1,122 @@
+[
+ {
+  "cond": "E2_057",
+  "method": "WH_finiteH",
+  "D": 5000,
+  "new_rate": 0.0411,
+  "archived_rate": 0.0415,
+  "z": -0.08219396911702152
+ },
+ {
+  "cond": "E2_057",
+  "method": "WH_finiteH",
+  "D": 10000,
+  "new_rate": 0.374,
+  "archived_rate": 0.368,
+  "z": 0.5065093175366981
+ },
+ {
+  "cond": "E2_057",
+  "method": "WH_finiteH",
+  "D": 20000,
+  "new_rate": 0.8274,
+  "archived_rate": 0.8295,
+  "z": -0.22704631600310549
+ },
+ {
+  "cond": "E2_057",
+  "method": "CUSUM_p1_012",
+  "D": 5000,
+  "new_rate": 0.0101,
+  "archived_rate": 0.01,
+  "z": 0.04086231755574713
+ },
+ {
+  "cond": "E2_057",
+  "method": "CUSUM_p1_012",
+  "D": 10000,
+  "new_rate": 0.283,
+  "archived_rate": 0.2855,
+  "z": -0.22647399394456258
+ },
+ {
+  "cond": "E2_057",
+  "method": "CUSUM_p1_012",
+  "D": 20000,
+  "new_rate": 0.9102,
+  "archived_rate": 0.9155,
+  "z": -0.7602030482401108
+ },
+ {
+  "cond": "E2_057",
+  "method": "CUSUM_p1_020",
+  "D": 5000,
+  "new_rate": 0.0988,
+  "archived_rate": 0.0965,
+  "z": 0.31522085862559895
+ },
+ {
+  "cond": "E2_057",
+  "method": "CUSUM_p1_020",
+  "D": 10000,
+  "new_rate": 0.4773,
+  "archived_rate": 0.4715,
+  "z": 0.4740994114411862
+ },
+ {
+  "cond": "E2_057",
+  "method": "CUSUM_p1_020",
+  "D": 20000,
+  "new_rate": 0.8923,
+  "archived_rate": 0.8905,
+  "z": 0.23675686190519232
+ },
+ {
+  "cond": "E2_057",
+  "method": "mSR_finiteH",
+  "D": 5000,
+  "new_rate": 0.1139,
+  "archived_rate": 0.1085,
+  "z": 0.6963332013969898
+ },
+ {
+  "cond": "E2_057",
+  "method": "mSR_finiteH",
+  "D": 10000,
+  "new_rate": 0.4176,
+  "archived_rate": 0.412,
+  "z": 0.46372405587806614
+ },
+ {
+  "cond": "E2_057",
+  "method": "mSR_finiteH",
+  "D": 20000,
+  "new_rate": 0.8667,
+  "archived_rate": 0.868,
+  "z": -0.15624898896455272
+ },
+ {
+  "cond": "E2_057",
+  "method": "periodic_binomial",
+  "D": 5000,
+  "new_rate": 0.0049,
+  "archived_rate": 0.0065,
+  "z": -0.9110956465771477
+ },
+ {
+  "cond": "E2_057",
+  "method": "periodic_binomial",
+  "D": 10000,
+  "new_rate": 0.1715,
+  "archived_rate": 0.177,
+  "z": -0.5944174825446015
+ },
+ {
+  "cond": "E2_057",
+  "method": "periodic_binomial",
+  "D": 20000,
+  "new_rate": 0.4302,
+  "archived_rate": 0.439,
+  "z": -0.7253226269665688
+ }
+]

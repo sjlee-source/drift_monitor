@@ -1,0 +1,17 @@
+incontrol q=0.2 base_iid thresholds 203s
+incontrol q=0.2 base_iid done 260s
+incontrol q=0.2 markov_phi0.3 thresholds 202s
+incontrol q=0.2 markov_phi0.3 done 258s
+incontrol q=0.2 markov_phi0.6 thresholds 209s
+incontrol q=0.2 markov_phi0.6 done 265s
+incontrol q=0.2 board_icc_r0.2 thresholds 206s
+incontrol q=0.2 board_icc_r0.2 done 265s
+incontrol q=0.5 base_iid thresholds 354s
+incontrol q=0.5 base_iid done 411s
+incontrol q=0.5 markov_phi0.3 thresholds 380s
+incontrol q=0.5 markov_phi0.3 done 438s
+incontrol q=0.5 markov_phi0.6 thresholds 391s
+incontrol q=0.5 markov_phi0.6 done 448s
+incontrol q=0.5 board_icc_r0.2 thresholds 275s
+incontrol q=0.5 board_icc_r0.2 done 333s
+incontrol total done

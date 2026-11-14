@@ -1,0 +1,17 @@
+primary q=0.2 base_iid thresholds 355s
+primary q=0.2 base_iid done 431s
+primary q=0.2 markov_phi0.3 thresholds 358s
+primary q=0.2 markov_phi0.3 done 432s
+primary q=0.2 markov_phi0.6 thresholds 348s
+primary q=0.2 markov_phi0.6 done 424s
+primary q=0.2 board_icc_r0.2 thresholds 344s
+primary q=0.2 board_icc_r0.2 done 422s
+primary q=0.5 base_iid thresholds 620s
+primary q=0.5 base_iid done 696s
+primary q=0.5 markov_phi0.3 thresholds 502s
+primary q=0.5 markov_phi0.3 done 573s
+primary q=0.5 markov_phi0.6 thresholds 554s
+primary q=0.5 markov_phi0.6 done 622s
+primary q=0.5 board_icc_r0.2 thresholds 559s
+primary q=0.5 board_icc_r0.2 done 638s
+primary total done
