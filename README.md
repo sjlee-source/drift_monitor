@@ -60,7 +60,7 @@ At the 10,000-item deadline, supported/insufficient/inconclusive counts across 3
 
 ## Integrity and citation
 
-`MANIFEST.json` records SHA-256 hashes of numerical evidence and source scripts. Source provenance is recorded in `PROVENANCE.json`. Release v2.0.0 is archived on Zenodo (see CITATION.cff); cite the release DOI. The code is released under the MIT License (see LICENSE).
+`MANIFEST.json` records SHA-256 hashes of numerical evidence and source scripts. Source provenance is recorded in `PROVENANCE.json`. Release v2.0.0 is archived on Zenodo: [doi:10.5281/zenodo.24210607](https://doi.org/10.5281/zenodo.24210607). The code is released under the MIT License (see LICENSE).
 
 ## Alarm convention and betting-gain sensitivity
 
